@@ -12,7 +12,7 @@ define(function () {
     },
     ie: {
       name: 'Internet Explorer',
-      versions: ['5.5', 6, 7, 8, 9, 10, 11],
+      versions: [6, 7, 8, 9, 10, 11],
       current: 11
     },
     safari: {
