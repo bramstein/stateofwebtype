@@ -24,7 +24,7 @@ define(function () {
     }, {
       name: 'src',
       browsers: [
-        'ie',      '6-8', 'partial', 'Internet Explorer 6 to 8 only support a single url.',
+        'ie',      '6-8',   'partial', 'Internet Explorer 6 to 8 only support a single url.',
         'ie',      '9-',    'yes',     null,
         'chrome',  '-',     'yes',     null,
         'firefox', '-',     'yes',     null,
@@ -36,7 +36,7 @@ define(function () {
       features: [{
         name: 'WOFF',
         browsers: [
-          'ie',      '-8', 'no',   'Internet Explorer 6 to 8 only support Embedded OpenType (EOT).',
+          'ie',      '-8',    'no',   'Internet Explorer 6 to 8 only support Embedded OpenType (EOT).',
           'ie',      '9-',    'yes',  null,
           'chrome',  '4',     'no',   null,
           'chrome',  '5-',    'yes',  null,
@@ -126,10 +126,10 @@ define(function () {
     }, {
       name: 'font-stretch',
       browsers: [
-        'ie',      '-8', 'no',  null,
+        'ie',      '-8',    'no',  null,
         'ie',      '9-',    'yes', null,
         'chrome',  '-',     'no',  null,
-        'firefox', '-8', 'yes', 'Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms.',
+        'firefox', '-8',    'yes', 'Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms.',
         'firefox', '8-',    'yes', null,
         'safari',  '-',     'no',  null,
         'ios',     '-',     'no',  null,
@@ -173,7 +173,7 @@ define(function () {
         'ios',     '-',      'yes', null,
         'opera',   '-12.16', 'no',  null,
         'opera',   '15-',    'yes', null,
-        'android', '-3',   'no',  null,
+        'android', '-3',     'no',  null,
         'android', '4-',     'yes', null
       ]
     }]
