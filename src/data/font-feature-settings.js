@@ -108,6 +108,20 @@ define(function () {
         'android', '-', 'no', null      
       ]
     }, {
+      name: 'smcp',
+      description: 'Small Capitals',
+        'ie',      '-9', 'no', null,
+        'ie',      '10-', 'yes', null,
+        'chrome',  '-32', 'no', null,
+        'chrome',  '33-', 'yes', null,
+        'firefox', '3.6', 'no', null,
+        'firefox', '4-', 'yes', null,
+        'safari',  '-', 'no', null,
+        'ios',     '-', 'no', null,
+        'opera',   '-12.16', 'no', null,
+        'opera',   '15-',   'yes', null,
+        'android', '-', 'no', null
+    }, {
       name: 'c2sc',
       description: 'Small Capitals From Capitals',
       browsers: [
