@@ -1,15 +1,15 @@
 define(function () {
   return {
-    name: 'hyphenate-limit-zone',
+    name: "hyphenate-limit-zone",
     browsers: [
-      'ie',      '-9',  'no',  null,
-      'ie',      '10-', 'yes', null,
-      'chrome',  '-',   'no',  null,
-      'firefox', '-',   'no',  null,
-      'safari',  '-',   'no',  null,
-      'ios',     '-',   'no',  null,
-      'opera',   '-',   'no',  null,
-      'android', '-',   'no',  null
+      { name: "ie", range: "-9", support: "no" },
+      { name: "ie", range: "10-", support: "yes" },
+      { name: "chrome", range: "-", support: "no" },
+      { name: "firefox", range: "-", support: "no" },
+      { name: "safari", range: "-", support: "no" },
+      { name: "ios", range: "-", support: "no" },
+      { name: "opera", range: "-", support: "no" },
+      { name: "android", range: "-", support: "no" }
     ]
   };
 });

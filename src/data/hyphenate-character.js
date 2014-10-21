@@ -1,16 +1,16 @@
 define(function () {
   return {
-    name: 'hyphenate-character',
+    name: "hyphenate-character",
     browsers: [
-      'ie',      '-',   'no',  null,
-      'chrome',  '-',   'yes', null,
-      'firefox', '-',   'no',  null,
-      'safari',  '-',   'yes', null,
-      'ios',     '-',   'yes', null,
-      'opera',   '-12', 'no',  null,
-      'opera',   '15-', 'yes', null,
-      'android', '-3',  'no',  null,
-      'android', '4-',  'yes', null
+      { name: "ie",      range: "-",   support: "no" },
+      { name: "chrome",  range: "-",   support: "yes" },
+      { name: "firefox", range: "-",   support: "no" },
+      { name: "safari",  range: "-",   support: "yes" },
+      { name: "ios",     range: "-",   support: "yes" },
+      { name: "opera",   range: "-12", support: "no" },
+      { name: "opera",   range: "15-", support: "yes" },
+      { name: "android", range: "-3",  support: "no" },
+      { name: "android", range: "4-",  support: "yes" }
     ]
   };
 });

@@ -1,16 +1,16 @@
 define(function () {
   return {
-    name: 'font-kerning',
+    name: "font-kerning",
     browsers: [
-      'ie',      '-',  'no',  null,
-      'chrome',  '-',  'no',  null,
-      'firefox', '-',  'no',  null,
-      'opera',   '-',  'no',  null,
-      'safari',  '-6', 'no',  null,
-      'safari',  '7-', 'yes', 'Safari has kerning enabled by default, so font-kerning can only be used to turn off kerning.',
-      'ios',     '-6', 'no',  null,
-      'ios',     '7-', 'yes', null,
-      'android', '-',  'no',  null
+      { name: "ie",      range: "-",  support: "no" },
+      { name: "chrome",  range: "-",  support: "no" },
+      { name: "firefox", range: "-",  support: "no" },
+      { name: "opera",   range: "-",  support: "no" },
+      { name: "safari",  range: "-6", support: "no" },
+      { name: "safari",  range: "7-", support: "yes", note: "Safari has kerning enabled by default." },
+      { name: "ios",     range: "-6", support: "no" },
+      { name: "ios",     range: "7-", support: "yes" },
+      { name: "android", range: "-",  support: "no" }
     ]
   };
 });

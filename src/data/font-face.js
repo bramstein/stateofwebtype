@@ -1,181 +1,196 @@
 define(function () {
   return {
-    name: '@font-face',
+    name: "@font-face",
     browsers: [
-      'ie',      '-', 'yes', 'Internet Explorer 6, 7, and 8 only support the Embedded OpenType (EOT) format. Internet Explorer 9 and above supports multiple formats.',
-      'chrome',  '-', 'yes', null,
-      'firefox', '-', 'yes', null,
-      'safari',  '-', 'yes', null,
-      'ios',     '-', 'yes', 'Safari for iOS 3.2 to 4.1 only support SVG fonts.',
-      'opera',   '-', 'yes', null,
-      'android', '-', 'yes', null
+      { name: "ie", range: "-", support: "yes", note: "Internet Explorer 6, 7, and 8 only support the Embedded OpenType (EOT) format. Internet Explorer 9 and above supports multiple formats." },
+      { name: "chrome", range: "-", support: "yes" },
+      { name: "firefox", range: "-", support: "yes" },
+      { name: "safari", range: "-", support: "yes" },
+      { name: "ios", range: "-", support: "yes", note: "Safari for iOS 3.2 to 4.1 only support SVG fonts." },
+      { name: "opera", range: "-", support: "yes" },
+      { name: "android", range: "-", support: "yes" }
     ],
-    features: [{
-      name: 'font-family',
-      browsers: [
-        'ie',      '-', 'yes', 'Internet Explorer limits the length of a font-family to 32 characters.',
-        'chrome',  '-', 'yes', null,
-        'firefox', '-', 'yes', null,
-        'safari',  '-', 'yes', null,
-        'ios',     '-', 'yes', null,
-        'opera',   '-', 'yes', null,
-        'android', '-', 'yes', null
-      ]
-    }, {
-      name: 'src',
-      browsers: [
-        'ie',      '6-8',   'partial', 'Internet Explorer 6 to 8 only support a single url.',
-        'ie',      '9-',    'yes',     null,
-        'chrome',  '-',     'yes',     null,
-        'firefox', '-',     'yes',     null,
-        'safari',  '-',     'yes',     null,
-        'ios',     '-',     'yes',     null,
-        'opera',   '-',     'yes',     null,
-        'android', '-',     'yes',     null
-      ],
-      features: [{
-        name: 'WOFF',
+    features: [
+      {
+        name: "font-family",
         browsers: [
-          'ie',      '-8',    'no',   'Internet Explorer 6 to 8 only support Embedded OpenType (EOT).',
-          'ie',      '9-',    'yes',  null,
-          'chrome',  '4',     'no',   null,
-          'chrome',  '5-',    'yes',  null,
-          'firefox', '-',     'yes',  null,
-          'safari',  '-5',    'no',   null,
-          'safari',  '5.1-',  'yes',  null,
-          'ios',     '-4.3',  'no',   null,
-          'ios',     '5.1-',  'yes',  null,
-          'opera',   '-11',   'no',   null,
-          'opera',   '11.1',  'yes',  null,
-          'android', '-4.3',  'no',   null,
-          'android', '4.4-',  'yes',  null
+          { name: "ie", range: "-", support: "yes", note: "Internet Explorer limits the length of a font-family to 32 characters." },
+          { name: "chrome", range: "-", support: "yes" },
+          { name: "firefox", range: "-", support: "yes" },
+          { name: "safari", range: "-", support: "yes" },
+          { name: "ios", range: "-", support: "yes" },
+          { name: "opera", range: "-", support: "yes" },
+          { name: "android", range: "-", support: "yes" }
         ]
-      }, {
-        name: 'WOFF2',
+      },
+      {
+        name: "src",
         browsers: [
-          'ie',      '-',   'no',  null,
-          'chrome',  '-35', 'no',  null,
-          'chrome',  '36-', 'yes', null,
-          'firefox', '-',   'no',  null,
-          'safari',  '-',   'no',  null,
-          'ios',     '-',   'no',  null,
-          'opera',   '-22', 'no',  null,
-          'opera',   '23-', 'yes', null,
-          'android', '-',   'no',  null
+          { name: "ie", range: "6-8", support: "partial", note: "Internet Explorer 6 to 8 only support a single url." },
+          { name: "ie", range: "9-", support: "yes" },
+          { name: "chrome", range: "-", support: "yes" },
+          { name: "firefox", range: "-", support: "yes" },
+          { name: "safari", range: "-", support: "yes" },
+          { name: "ios", range: "-", support: "yes" },
+          { name: "opera", range: "-", support: "yes" },
+          { name: "android", range: "-", support: "yes" }
+        ],
+        features: [
+          {
+            name: "WOFF",
+            browsers: [
+              { name: "ie", range: "-8", support: "no", note: "Internet Explorer 6 to 8 only support Embedded OpenType (EOT)." },
+              { name: "ie", range: "9-", support: "yes" },
+              { name: "chrome", range: "4", support: "no" },
+              { name: "chrome", range: "5-", support: "yes" },
+              { name: "firefox", range: "-", support: "yes" },
+              { name: "safari", range: "-5", support: "no" },
+              { name: "safari", range: "5.1-", support: "yes" },
+              { name: "ios", range: "-4.3", support: "no" },
+              { name: "ios", range: "5.1-", support: "yes" },
+              { name: "opera", range: "-11", support: "no" },
+              { name: "opera", range: "11.1", support: "yes" },
+              { name: "android", range: "-4.3", support: "no" },
+              { name: "android", range: "4.4-", support: "yes" }
+            ]
+          },
+          {
+            name: "WOFF2",
+            browsers: [
+              { name: "ie", range: "-", support: "no" },
+              { name: "chrome", range: "-35", support: "no" },
+              { name: "chrome", range: "36-", support: "yes" },
+              { name: "firefox", range: "-", support: "no" },
+              { name: "safari", range: "-", support: "no" },
+              { name: "ios", range: "-", support: "no" },
+              { name: "opera", range: "-22", support: "no" },
+              { name: "opera", range: "23-", support: "yes" },
+              { name: "android", range: "-", support: "no" }
+            ]
+          },
+          {
+            name: "EOT",
+            browsers: [
+              { name: "ie", range: "-", support: "yes", note: "The EOT format only supports embedding TrueType fonts in Internet Explorer 8 and below." },
+              { name: "chrome", range: "-", support: "no" },
+              { name: "firefox", range: "-", support: "no" },
+              { name: "safari", range: "-", support: "no" },
+              { name: "ios", range: "-", support: "no" },
+              { name: "opera", range: "-", support: "no" },
+              { name: "android", range: "-", support: "no" }
+            ]
+          },
+          {
+            name: "TTF/OTF",
+            browsers: [
+              { name: "ie", range: "-8", support: "no" },
+              { name: "ie", range: "9-", support: "yes", note: "The fonts need their installable bit set for fonts to load." },
+              { name: "chrome", range: "-", support: "yes" },
+              { name: "firefox", range: "-", support: "yes" },
+              { name: "safari", range: "-", support: "yes" },
+              { name: "ios", range: "-4.1", support: "no" },
+              { name: "ios", range: "4.3-", support: "yes" },
+              { name: "opera", range: "-", support: "yes" },
+              { name: "android", range: "-", support: "yes", note: "Due to a bug fonts need their installable bit set between versions 3.1 and 4.1." }
+            ]
+          },
+          {
+            name: "SVG",
+            browsers: [
+              { name: "ie", range: "-", support: "no" },
+              { name: "firefox", range: "-", support: "no" },
+              { name: "chrome", range: "-37", support: "yes" },
+              { name: "chrome", range: "38-", support: "partial", note: "Starting from Chrome 38 SVG fonts are disabled on all platforms except Windows XP and Windows Vista. On these platforms SVG fonts still work but are deprecated." },
+              { name: "safari", range: "-", support: "yes" },
+              { name: "opera", range: "-24", support: "yes" },
+              { name: "opera", range: "25-", support: "yes", note: "Starting from Opera 25 SVG fonts are disabled on all platforms except Windows XP and Windows Vista. On these platforms SVG fonts still work but are deprecated." },
+              { name: "android", range: "-2.3", support: "no" },
+              { name: "android", range: "3-", support: "yes" }
+            ]
+          }
         ]
-      }, {
-        name: 'EOT',
+      },
+      {
+        name: "font-weight",
         browsers: [
-          'ie',      '-',   'yes', 'The EOT format only supports embedding TrueType fonts in Internet Explorer 8 and below.',
-          'chrome',  '-',   'no',  null,
-          'firefox', '-',   'no',  null,
-          'safari',  '-',   'no',  null,
-          'ios',     '-',   'no',  null,
-          'opera',   '-',   'no',  null,
-          'android', '-',   'no',  null
+          { name: "ie", range: "-", support: "yes" },
+          { name: "chrome", range: "-", support: "yes" },
+          { name: "firefox", range: "-", support: "yes" },
+          { name: "safari", range: "-", support: "yes" },
+          { name: "ios", range: "-", support: "yes" },
+          { name: "opera", range: "-", support: "yes" },
+          { name: "android", range: "-", support: "yes" }
         ]
-      }, {
-        name: 'TTF/OTF',
+      },
+      {
+        name: "font-style",
         browsers: [
-          'ie',      '-8',   'no',  null,
-          'ie',      '9-',   'yes', 'The fonts need their installable bit set for fonts to load.',
-          'chrome',  '-',    'yes', null,
-          'firefox', '-',    'yes', null,
-          'safari',  '-',    'yes', null,
-          'ios',     '-4.1', 'no',  null,
-          'ios',     '4.3-', 'yes', null,
-          'opera',   '-',    'yes', null,
-          'android', '-',    'yes', 'Due to a bug fonts need their installable bit set between versions 3.1 and 4.1.'
+          { name: "ie", range: "-", support: "yes" },
+          { name: "chrome", range: "-", support: "yes" },
+          { name: "firefox", range: "-", support: "yes" },
+          { name: "safari", range: "-", support: "yes" },
+          { name: "ios", range: "-", support: "yes" },
+          { name: "opera", range: "-", support: "yes" },
+          { name: "android", range: "-", support: "yes" }
         ]
-      }, {
-        name: 'SVG',
+      },
+      {
+        name: "font-stretch",
         browsers: [
-          'ie',      '-',    'no',      null,
-          'firefox', '-',    'no',      null,
-          'chrome',  '-37',  'yes',     null,
-          'chrome',  '38-',  'partial', 'Starting from Chrome 38 SVG fonts are disabled on all platforms except Windows XP and Windows Vista. On these platforms SVG fonts still work but are deprecated.',
-          'safari',  '-',    'yes',     null,
-          'opera',   '-24',  'yes',     null,
-          'opera',   '25-',  'yes',     'Starting from Opera 25 SVG fonts are disabled on all platforms except Windows XP and Windows Vista. On these platforms SVG fonts still work but are deprecated.',
-          'android', '-2.3', 'no',      null,
-          'android', '3-',   'yes',     null
+          { name: "ie", range: "-8", support: "no" },
+          { name: "ie", range: "9-", support: "yes" },
+          { name: "chrome", range: "-", support: "no" },
+          { name: "firefox", range: "-8", support: "yes", note: "Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms." },
+          { name: "firefox", range: "8-", support: "yes" },
+          { name: "safari", range: "-", support: "no" },
+          { name: "ios", range: "-", support: "no" },
+          { name: "opera", range: "-", support: "no" },
+          { name: "android", range: "-", support: "no" }
         ]
-      }]
-    }, {
-      name: 'font-weight',
-      browsers: [
-        'ie',      '-', 'yes', null,
-        'chrome',  '-', 'yes', null,
-        'firefox', '-', 'yes', null,
-        'safari',  '-', 'yes', null,
-        'ios',     '-', 'yes', null,
-        'opera',   '-', 'yes', null,
-        'android', '-', 'yes', null
-      ]
-    }, {
-      name: 'font-style',
-      browsers: [
-        'ie',      '-', 'yes', null,
-        'chrome',  '-', 'yes', null,
-        'firefox', '-', 'yes', null,
-        'safari',  '-', 'yes', null,
-        'ios',     '-', 'yes', null,
-        'opera',   '-', 'yes', null,
-        'android', '-', 'yes', null
-      ]
-    }, {
-      name: 'font-stretch',
-      browsers: [
-        'ie',      '-8',    'no',  null,
-        'ie',      '9-',    'yes', null,
-        'chrome',  '-',     'no',  null,
-        'firefox', '-8',    'yes', 'Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms.',
-        'firefox', '8-',    'yes', null,
-        'safari',  '-',     'no',  null,
-        'ios',     '-',     'no',  null,
-        'opera',   '-',     'no',  null,
-        'android', '-',     'no',  null
-      ]
-    }, {
-      name: 'font-variant',
-      browsers: [
-        'ie',      '-', 'no', null,
-        'chrome',  '-', 'no', 'Web fonts fail to render if font-variant is used within @font-face.',
-        'firefox', '-', 'no', null,
-        'safari',  '-', 'no', 'Web fonts fail to render if font-variant is used within @font-face.',
-        'ios',     '-', 'no', 'Web fonts fail to render if font-variant is used within @font-face.',
-        'opera',   '-', 'no', 'Web fonts fail to render if font-variant is used within @font-face.',
-        'android', '-', 'no', 'Web fonts fail to render if font-variant is used within @font-face.'
-      ]
-    }, {
-      name: 'font-feature-settings',
-      browsers: [
-        'ie',      '-',   'no',  null,
-        'chrome',  '-',   'no',  null,
-        'firefox', '-19', 'no',  null,
-        'firefox', '20-', 'yes', null,
-        'safari',  '-',   'no',  null,
-        'ios',     '-',   'no',  null,
-        'opera',   '-',   'no',  null,
-        'android', '-',   'no',  null
-      ]
-    }, {
-      // This needs a bit more work. We also need to define what support means.
-      // Several browsers can use this property to define which characters are
-      // supported by a web font, but don't use this information to download
-      // only the web fonts that are needed.
-      name: 'unicode-range',
-      browsers: [
-        'ie',      '-',      'no',  null,
-        'chrome',  '-',      'yes', null,
-        'firefox', '-',      'no',  null,
-        'safari',  '-',      'yes', null,
-        'ios',     '-',      'yes', null,
-        'opera',   '-12.16', 'no',  null,
-        'opera',   '15-',    'yes', null,
-        'android', '-3',     'no',  null,
-        'android', '4-',     'yes', null
-      ]
-    }]
+      },
+      {
+        name: "font-variant",
+        browsers: [
+          { name: "ie", range: "-", support: "no" },
+          { name: "chrome", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
+          { name: "firefox", range: "-", support: "no" },
+          { name: "safari", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
+          { name: "ios", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
+          { name: "opera", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
+          { name: "android", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." }
+        ]
+      },
+      {
+        name: "font-feature-settings",
+        browsers: [
+          { name: "ie", range: "-", support: "no" },
+          { name: "chrome", range: "-", support: "no" },
+          { name: "firefox", range: "-19", support: "no" },
+          { name: "firefox", range: "20-", support: "yes" },
+          { name: "safari", range: "-", support: "no" },
+          { name: "ios", range: "-", support: "no" },
+          { name: "opera", range: "-", support: "no" },
+          { name: "android", range: "-", support: "no" }
+        ]
+      },
+      {
+        // This needs a bit more work. We also need to define what support means.
+        // Several browsers can use this property to define which characters are
+        // supported by a web font, but don't use this information to download
+        // only the web fonts that are needed.
+        name: "unicode-range",
+        browsers: [
+          { name: "ie", range: "-", support: "no" },
+          { name: "chrome", range: "-", support: "yes" },
+          { name: "firefox", range: "-", support: "no" },
+          { name: "safari", range: "-", support: "yes" },
+          { name: "ios", range: "-", support: "yes" },
+          { name: "opera", range: "-12.16", support: "no" },
+          { name: "opera", range: "15-", support: "yes" },
+          { name: "android", range: "-3", support: "no" },
+          { name: "android", range: "4-", support: "yes" }
+        ]
+      }
+    ]
   };
 });
