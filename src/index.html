@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>State of Web Type</title>
+    <meta charset="utf-8">
+    <script src="http://use.typekit.net/evn7seg.js"></script>
+    <script>Typekit.load()</script>
+    <style>
+      body {
+        max-width: 800px;
+        margin: 4em auto;
+        font-family: jaf-facitweb, ff-meta-web-pro, sans-serif;
+        font-weight: 300;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        -moz-font-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+      }
+
+      table {
+        width: 100%;
+        text-align: left;
+      }
+
+      table td {
+        vertical-align: top;
+      }
+
+      #search {
+        width: 100%;
+        line-height: 26px;
+      }
+
+      #result-count, #results, #splash-page {
+        display: none;
+      }
+
+      html.search #results, html.search #result-count {
+        display: block;
+      }
+
+      html.splash #splash-page {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="search" placeholder="Enter a feature, e.g. font-face, ...">
+
+    <div id="result-count">
+    </div>
+
+    <div id="results">
+    </div>
+
+    <div id="splash-page">
+    </div>
+
+    <script type="template" id="count">
+      {{#singular}}
+      Found {{number}} feature.
+      {{/singular}}
+      {{^singular}}
+      Found {{number}} features.
+      {{/singular}}
+    </script>
+    <script type="template" id="feature">
+      <h1>{{name}}</h1>
+      {{#description}}
+        <p>{{.}}</p>
+      {{/description}}
+      <table>
+        <thead>
+          <tr>
+            <th>Browser</th>
+            <th>Version</th>
+            <th>Supported?</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#browsers}}
+            <tr>
+              <td>{{name}}</td>
+              <td>
+                {{#support}}
+                  {{range}}<br>
+                {{/support}}
+              </td>
+              <td>
+                {{#support}}
+                  {{value}}<br>
+                {{/support}}
+              </td>
+            </tr>
+          {{/browsers}}
+        </tbody>
+      </table>
+      {{#hasRelations}}
+        <p>See also:</p>
+        <ul>
+          {{#seeAlso}}
+            <li><a href="#{{.}}">{{.}}</a></li>
+          {{/seeAlso}}
+        </ul>
+      {{/hasRelations}}
+    </script>
+    <script src="require.js" data-almond="almond.js" data-main="main"></script>
+  </body>
+</html>
