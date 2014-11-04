@@ -62,41 +62,50 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     resultCountWrapper.innerHTML = Mustache.render(resultCountTemplate, { number: features.length, singular: features.length === 1 });
   }
 
-  var updateHash = debounce(function (value) {
-    location.hash = "#" + encodeURIComponent(value);
-  }, 1000);
+  function onHashChange() {
+    var hash = decodeURIComponent(location.hash.replace('#', ''));
 
+    if (!/\s+/.test(hash) && hash.length !== 0) {
+      search.value = hash;
+      var results = find(hash.trim());
+      renderFeatures(results);
+      renderResultCount(results);
+      document.documentElement.classList.remove('splash');
+      document.documentElement.classList.add('search');
+    } else {
+      document.documentElement.classList.remove('search');
+      document.documentElement.classList.add('splash');
+    }
+  }
+
+  var updateHash = debounce(function () {
+    location.hash = "#" + encodeURIComponent(search.value.trim());
+  }, 1000);
 
   search.addEventListener('input', function (e) {
     var input = search.value.trim();
 
-    if (document.documentElement.classList.contains("splash")) {
-      document.documentElement.classList.remove("splash");
-      document.documentElement.classList.add("search");
-    }
-
     if (input !== "") {
+      if (document.documentElement.classList.contains("splash")) {
+        document.documentElement.classList.remove("splash");
+        document.documentElement.classList.add("search");
+      }
       var results = find(input);
 
       renderFeatures(results);
       renderResultCount(results);
-      updateHash(input);
     } else {
+      if (document.documentElement.classList.contains("search")) {
+        document.documentElement.classList.remove("search");
+        document.documentElement.classList.add("splash");
+      }
       renderFeatures([]);
-      updateHash("");
       renderResultCount([]);
     }
+    updateHash();
   }, true);
 
-  var hash = decodeURIComponent(location.hash.trim().replace('#', ''));
+  onHashChange();
 
-  if (hash !== "") {
-    search.value = hash;
-    var results = find(hash);
-    renderFeatures(results);
-    renderResultCount(results);
-    document.documentElement.classList.add('search');
-  } else {
-    document.documentElement.classList.add('splash');
-  }
+  window.onhashchange = onHashChange;
 });
