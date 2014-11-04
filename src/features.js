@@ -124,14 +124,14 @@ define([
     return feature;
   }
 
-  return {
-    '@font-face': init(fontface),
-    'font-feature-settings': init(fontFeatureSettings),
-    'font-kerning': init(fontKerning),
-    'hyphenate-character': init(hyphenateCharacter),
-    'hyphenate-limit-chars': init(hyphenateLimitChars),
-    'hyphenate-limit-lines': init(hyphenateLimitLines),
-    'hyphenate-limit-zone': init(hyphenateLimitZone),
-    'hyphens': init(hyphens)
-  };
+  return [
+    init(fontface),
+    init(fontFeatureSettings),
+    init(fontKerning),
+    init(hyphenateCharacter),
+    init(hyphenateLimitChars),
+    init(hyphenateLimitLines),
+    init(hyphenateLimitZone),
+    init(hyphens)
+  ];
 });

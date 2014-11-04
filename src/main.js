@@ -1,15 +1,27 @@
 require(['mustache', 'browsers', 'features'], function (Mustache, browsers, features) {
   var featureTemplate = document.getElementById('feature').innerHTML,
       resultCountTemplate = document.getElementById('count').innerHTML,
+      indexTemplate = document.getElementById('index-template').innerHTML,
       resultCountWrapper = document.getElementById('result-count')
       resultsWrapper = document.getElementById('results'),
       splashWrapper = document.getElementById('splash-page'),
+      indexWrapper = document.getElementById('index'),
       search = document.getElementById('search');
+
+  function walk(features, fn) {
+    features.forEach(function (feature) {
+      fn(feature);
+
+      if (feature.features) {
+        walk(feature.features, fn);
+      }
+    });
+  }
 
   function find(input) {
     var result = [];
 
-    function findAux(feature) {
+    walk(features, function (feature) {
       var keywords = feature.keywords || [];
 
       keywords.push(feature.name);
@@ -20,14 +32,6 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
           break;
         }
       }
-      if (feature.features) {
-        feature.features.forEach(findAux);
-      }
-    }
-
-    Object.keys(features).forEach(function (featureId) {
-      var feature = features[featureId];
-      findAux(features[featureId]);
     });
 
     return result.sort(function (a, b) {
@@ -62,6 +66,34 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     resultCountWrapper.innerHTML = Mustache.render(resultCountTemplate, { number: features.length, singular: features.length === 1 });
   }
 
+  function renderIndex() {
+    var tmp = {},
+        index = [];
+
+    walk(features, function (feature) {
+      var firstChar = feature.name.charAt(0).toLocaleLowerCase()
+
+      if (!tmp[firstChar]) {
+        tmp[firstChar] = [];
+      }
+
+      tmp[firstChar].push(feature.name);
+    });
+
+    Object.keys(tmp).forEach(function (c) {
+      index.push({
+        index: c,
+        entries: tmp[c]
+      });
+    });
+
+    index.sort(function (a, b) {
+      return a.index.localeCompare(b.index);
+    });
+
+    indexWrapper.innerHTML = Mustache.render(indexTemplate, { index: index });
+  }
+
   function onHashChange() {
     var hash = decodeURIComponent(location.hash.replace('#', ''));
 
@@ -75,6 +107,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     } else {
       document.documentElement.classList.remove('search');
       document.documentElement.classList.add('splash');
+      renderIndex();
     }
   }
 
@@ -101,6 +134,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
       }
       renderFeatures([]);
       renderResultCount([]);
+      renderIndex();
     }
     updateHash();
   }, true);

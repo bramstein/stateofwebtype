@@ -41,6 +41,13 @@
       html.splash #splash-page {
         display: block;
       }
+
+      #index {
+        column-width: 200px;
+        -webkit-column-width: 200px;
+        -moz-column-width: 200px;
+        -ms-column-width: 200px;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +60,8 @@
     </div>
 
     <div id="splash-page">
+      <div id="index">
+      </div>
     </div>
 
     <script type="template" id="count">
@@ -62,6 +71,16 @@
       {{^singular}}
       Found {{number}} features.
       {{/singular}}
+    </script>
+    <script type="template" id="index-template">
+      {{#index}}
+        <h2>{{index}}</h2>
+        <ul>
+          {{#entries}}
+            <li><a href="#{{.}}">{{.}}</a></li>
+          {{/entries}}
+        </ul>
+      {{/index}}
     </script>
     <script type="template" id="feature">
       <h1>{{name}}</h1>
