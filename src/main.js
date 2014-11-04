@@ -65,7 +65,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
   function onHashChange() {
     var hash = decodeURIComponent(location.hash.replace('#', ''));
 
-    if (!/\s+/.test(hash) && hash.length !== 0) {
+    if (!/^\s*$/g.test(hash)) {
       search.value = hash;
       var results = find(hash.trim());
       renderFeatures(results);
