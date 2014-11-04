@@ -31,7 +31,7 @@ define(function () {
       current: 8
     },
     android: {
-      name: 'Android Browser',
+      name: 'Android WebKit',
       versions: ['2.2', '2.3', 3, 4, '4.1', '4.3', '4.4', '4.4.3'],
       current: '4.4'
     }

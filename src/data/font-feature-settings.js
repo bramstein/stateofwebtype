@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "font-feature-settings",
+    description: "The font-feature-settings property can be used to enable or disable OpenType features.",
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },
@@ -21,8 +22,8 @@ define(function () {
     ],
     features: [
       {
-        name: "liga",
-        description: "Standard Ligatures",
+        name: "Standard Ligatures (liga)",
+        keywords: ["liga", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -42,9 +43,9 @@ define(function () {
         ]
       },
       {
-        name: "clig",
+        name: "Contextual Ligatures (clig)",
+        keywords: ["clig", "ligatures", "opentype features"],
         required: true,
-        description: "Contextual Ligatures",
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
