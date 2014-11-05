@@ -19,7 +19,8 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
   }
 
   function find(input) {
-    var result = [];
+    var result = [],
+        searchValue = input.toLocaleLowerCase();
 
     walk(features, function (feature) {
       var keywords = feature.keywords || [];
@@ -27,7 +28,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
       keywords.push(feature.name);
 
       for (var i = 0; i < keywords.length; i++) {
-        if (keywords[i].indexOf(input) !== -1) {
+        if (keywords[i].toLocaleLowerCase().indexOf(searchValue) !== -1) {
           result.push(feature);
           break;
         }
