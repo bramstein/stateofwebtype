@@ -174,7 +174,7 @@ define(function () {
         ]
       },
       {
-        name: "font-feature-settings",
+        name: "font-feature-settings (font-face)",
         description: "The font-feature-settings property can be used to set default OpenType features within @font-face rules.",
         keywords: ['font-feature-settings', 'feature-settings', 'feature', 'features', 'ligatures', 'small-caps', 'opentype'],
         browsers: [
