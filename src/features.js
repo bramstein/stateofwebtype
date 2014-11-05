@@ -107,7 +107,7 @@ define([
                 entry.hasNote = true;
 
                 if (notes.indexOf(data.note) !== -1) {
-                  entry.note = notes.indexOf(data.note);
+                  entry.note = notes.indexOf(data.note) + 1;
                 } else {
                   notes.push(data.note);
                   entry.note = notes.length;
