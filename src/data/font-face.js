@@ -103,7 +103,7 @@ define(function () {
             ]
           },
           {
-            name: "SVG",
+            name: "SVG fonts",
             keywords: ['svg', 'vector', 'scalable', 'graphics', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-", support: "no" },
