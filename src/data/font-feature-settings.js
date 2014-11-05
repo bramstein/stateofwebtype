@@ -63,8 +63,8 @@ define(function () {
         ]
       },
       {
-        name: "dlig",
-        description: "Discretionary Ligatures",
+        name: "Discretionary Ligatures (dlig)",
+        keywords: ["clig", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -80,8 +80,8 @@ define(function () {
         ]
       },
       {
-        name: "hlig",
-        description: "Historical Ligatures",
+        name: "Historical Ligatures (hlig)",
+        keywords: ["hlig", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -97,9 +97,9 @@ define(function () {
         ]
       },
       {
-        name: "rlig",
+        name: "Required Ligatures (rlig)",
         required: true,
-        description: "Required Ligatures",
+        keywords: ["rlig", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -117,8 +117,8 @@ define(function () {
         ]
       },
       {
-        name: "smcp",
-        description: "Small Capitals",
+        name: "Small Capitals (smcp)",
+        keywords: ["smcp", "opentype features", "small caps", "small-caps", "smallcaps", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -134,8 +134,8 @@ define(function () {
         ]
       },
       {
-        name: "c2sc",
-        description: "Small Capitals From Capitals",
+        name: "Small Capitals From Capitals (c2sc)",
+        keywords: ["c2sc", "opentype features", "small capitals", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -151,8 +151,8 @@ define(function () {
         ]
       },
       {
-        name: "pcap",
-        description: "Petite Capitals",
+        name: "Petite Capitals (pcap)",
+        keywords: ["pcap", "opentype features", "petite capitals", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -168,8 +168,8 @@ define(function () {
         ]
       },
       {
-        name: "unic",
-        description: "Unicase",
+        name: "Unicase (unic)",
+        keywords: ["unic", "opentype features", "unicase", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -185,8 +185,8 @@ define(function () {
         ]
       },
       {
-        name: "case",
-        description: "Case-Sensitive Forms",
+        name: "Case-Sensitive Forms (case)",
+        keywords: ["case", "opentype features", "case sensitive"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -202,8 +202,8 @@ define(function () {
         ]
       },
       {
-        name: "titl",
-        description: "Titling",
+        name: "Titling (titl)",
+        keywords: ["titl", "opentype features", "titling"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -219,8 +219,8 @@ define(function () {
         ]
       },
       {
-        name: "lnum",
-        description: "Lining Numbers",
+        name: "Lining Numbers (lnum)",
+        keywords: ["lnum", "opentype features", "lining numbers", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -236,8 +236,8 @@ define(function () {
         ]
       },
       {
-        name: "onum",
-        description: "Oldstyle Numbers",
+        name: "Oldstyle Numerals (onum)",
+        keywords: ["onum", "opentype features", "oldstyle", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -253,8 +253,8 @@ define(function () {
         ]
       },
       {
-        name: "pnum",
-        description: "Proportional Numbers",
+        name: "Proportional Numbers (pnum)",
+        keywords: ["pnum", "opentype features", "proportional numbers", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -270,8 +270,8 @@ define(function () {
         ]
       },
       {
-        name: "tnum",
-        description: "Tabular Numbers",
+        name: "Tabular Numbers (tnum)",
+        keywords: ["tnum", "opentype features", "tabular numbers", "table", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -287,8 +287,8 @@ define(function () {
         ]
       },
       {
-        name: "zero",
-        description: "Slashed Zero",
+        name: "Slashed Zero (zero)",
+        keywords: ["zero", "opentype features", "zero", "slash", "numbers"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -304,8 +304,8 @@ define(function () {
         ]
       },
       {
-        name: "sups",
-        description: "Superscript",
+        name: "Superscript (sups)",
+        keywords: ["sups", "opentype features", "superscript", "super script"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -321,8 +321,8 @@ define(function () {
         ]
       },
       {
-        name: "subs",
-        description: "Subscript",
+        name: "Subscript (subs)",
+        keywords: ["subs", "opentype features", "subscript", "sub script"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -338,8 +338,8 @@ define(function () {
         ]
       },
       {
-        name: "sinf",
-        description: "Scientific Inferiors",
+        name: "Scientific Inferiors (sinf)",
+        keywords: ["sinf", "opentype features", "scientific inferiors", "inferiors"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -355,8 +355,8 @@ define(function () {
         ]
       },
       {
-        name: "numr",
-        "descriptions": "Numerators",
+        name: "Numerators (numr)",
+        keywords: ["numr", "opentype features", "numerator"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -372,8 +372,8 @@ define(function () {
         ]
       },
       {
-        name: "dnom",
-        "descriptions": "Denominators",
+        name: "Denominators (dnom)",
+        keywords: ["dnom", "opentype features", "denominators"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -389,8 +389,8 @@ define(function () {
         ]
       },
       {
-        name: "ordn",
-        "descriptions": "Ordinals",
+        name: "Ordinals (ordn)",
+        keywords: ["ordn", "opentype features", "ordinals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -406,8 +406,8 @@ define(function () {
         ]
       },
       {
-        name: "frac",
-        "descriptions": "Fractions",
+        name: "Fractions (frac)",
+        keywords: ["frac", "opentype features", "fraction"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -423,8 +423,8 @@ define(function () {
         ]
       },
       {
-        name: "afrc",
-        description: "Alternative Fractions",
+        name: "Alternative Fractions (afrc)",
+        keywords: ["afrc", "opentype features", "alternative", "fraction"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -440,8 +440,8 @@ define(function () {
         ]
       },
       {
-        name: "kern",
-        description: "Kerning",
+        name: "Kerning (kern)",
+        keywords: ["kern", "opentype features", "kerning", "keming"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -459,8 +459,8 @@ define(function () {
         ]
       },
       {
-        name: "cpsp",
-        description: "Capital Spacing",
+        name: "Capital Spacing (cpsp)",
+        keywords: ["cpsp", "opentype features", "capital", "spacing"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -476,8 +476,8 @@ define(function () {
         ]
       },
       {
-        name: "init",
-        description: "Initial Forms",
+        name: "Initial Forms (init)",
+        keywords: ["init", "opentype features", "initial", "forms"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -493,8 +493,8 @@ define(function () {
         ]
       },
       {
-        name: "medi",
-        description: "Medial Forms",
+        name: "Medial Forms (medi)",
+        keywords: ["media", "opentype features", "medial", "forms"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -510,8 +510,8 @@ define(function () {
         ]
       },
       {
-        name: "fina",
-        description: "Terminal Forms",
+        name: "Terminal Forms (fina)",
+        keywords: ["fina", "opentype features", "terminal", "forms"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -527,8 +527,8 @@ define(function () {
         ]
       },
       {
-        name: "isol",
-        description: "Isolated Forms",
+        name: "Isolated Forms (isol)",
+        keywords: ["isol", "opentype features", "isolated", "forms"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -544,9 +544,9 @@ define(function () {
         ]
       },
       {
-        name: "locl",
+        name: "Localized Forms (locl)",
+        keywords: ["locl", "opentype features", "localized", "localised", "forms"],
         required: true,
-        description: "Localized Forms",
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -562,8 +562,8 @@ define(function () {
         ]
       },
       {
-        name: "hist",
-        description: "Historical Forms",
+        name: "Historical Forms (hist)",
+        keywords: ["hist", "opentype features", "historical", "forms"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -579,8 +579,8 @@ define(function () {
         ]
       },
       {
-        name: "ornm",
-        description: "Ornaments",
+        name: "Ornaments (ornm)",
+        keywords: ["ornm", "opentype features", "ornaments"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -596,8 +596,8 @@ define(function () {
         ]
       },
       {
-        name: "swsh",
-        description: "Swashes",
+        name: "Swashes (swsh)",
+        keywords: ["swsh", "opentype features", "swash"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -613,8 +613,8 @@ define(function () {
         ]
       },
       {
-        name: "cswh",
-        description: "Contextual Swash",
+        name: "Contextual Swash (cswh)",
+        keywords: ["cswh", "opentype features", "contextual", "swash"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -630,9 +630,9 @@ define(function () {
         ]
       },
       {
-        name: "calt",
+        name: "Contextual Alternates (calt)",
         required: true,
-        description: "Contextual Alternates",
+        keywords: ["calt", "opentype features", "contextual", "alternates"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -650,8 +650,8 @@ define(function () {
         ]
       },
       {
-        name: "salt",
-        description: "Stylistic Alternates",
+        name: "Stylistic Alternates (salt)",
+        keywords: ["salt", "opentype features", "stylistic", "alternates"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
@@ -667,8 +667,8 @@ define(function () {
         ]
       },
       {
-        name: "ssxx",
-        description: "Stylistic Sets",
+        name: "Stylistic Sets (ssxx)",
+        keywords: ["ss00", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20", "opentype features", "stylistic", "sets"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
