@@ -89,7 +89,8 @@ define([
         }
       });
 
-      var result = [];
+      var result = [],
+          notes = [];
 
       Object.keys(browsers).forEach(function (browserId) {
         if (tmp[browserId]) {
@@ -97,15 +98,30 @@ define([
             id: browserId,
             name: browsers[browserId].name,
             support: tmp[browserId].map(function (data) {
-              return {
+              var entry = {
                 range: data.range,
                 value: values[data.support]
               };
+
+              if (data.note) {
+                entry.hasNote = true;
+
+                if (notes.indexOf(data.note) !== -1) {
+                  entry.note = notes.indexOf(data.note);
+                } else {
+                  notes.push(data.note);
+                  entry.note = notes.length;
+                }
+              }
+
+              return entry;
             })
           });
         }
       });
       feature.browsers = result;
+      feature.notes = notes;
+      feature.hasNotes = notes.length !== 0;
     } else {
       console.error('Feature "' + feature.name  + '" does not have browser support data.');
     }

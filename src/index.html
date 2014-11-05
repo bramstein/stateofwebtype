@@ -118,13 +118,24 @@
               </td>
               <td>
                 {{#support}}
-                  {{value}}<br>
+                  {{value}}
+                  {{#hasNote}}
+                    <sup>{{note}}</sup>
+                  {{/hasNote}}
+                  <br>
                 {{/support}}
               </td>
             </tr>
           {{/browsers}}
         </tbody>
       </table>
+      {{#hasNotes}}
+        <ol>
+          {{#notes}}
+            <li>{{.}}</li>
+          {{/notes}}
+        </ol>
+      {{/hasNotes}}
       {{#hasRelations}}
         <p>See also:</p>
         <ul class="inline-list">
