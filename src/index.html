@@ -40,6 +40,20 @@
         display: block;
       }
 
+      .inline-list, .inline-list li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
+
+      .inline-list li:after {
+        content: ', ';
+      }
+
+      .inline-list li:last-child:after {
+        content: '.';
+      }
+
       #index {
         column-width: 200px;
         -webkit-column-width: 200px;
@@ -113,7 +127,7 @@
       </table>
       {{#hasRelations}}
         <p>See also:</p>
-        <ul>
+        <ul class="inline-list">
           {{#seeAlso}}
             <li><a href="#{{.}}">{{.}}</a></li>
           {{/seeAlso}}
