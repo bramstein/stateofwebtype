@@ -12,7 +12,7 @@ define(function () {
       { name: "safari", range: "-5", support: "no" },
       { name: "safari", range: "6-", support: "partial", note: "Safari supports OpenType features and the font-feature-settings syntax but ignores any values. Instead it explicitly enables a select number of features." },
       { name: "ios", range: "-5", support: "no" },
-      { name: "ios", range: "6-", support: "partial", note: "Safari on iOS supports OpenType features and the font-feature-settings syntax but ignores any value. Instead it explicitly enabled a select number of features." },
+      { name: "ios", range: "6-", support: "partial", note: "Safari on iOS supports OpenType features and the font-feature-settings syntax but ignores any value. Instead it explicitly enables a select number of features." },
       { name: "opera", range: "-12.16", support: "no" },
       { name: "opera", range: "15-", support: "yes" },
       // Android needs more investigation. Is there such a thing as a
