@@ -189,22 +189,23 @@ define(function () {
         ]
       },
       {
-        // This needs a bit more work. We also need to define what support means.
-        // Several browsers can use this property to define which characters are
-        // supported by a web font, but don't use this information to download
-        // only the web fonts that are needed.
         name: "unicode-range",
+        description: "The unicode-range property offers a way to tell the browser which unicode characters are included in a font. It can use this information to selectively download and display fonts. For a browser to have full support it must both download and display the font selectively. Partial support means that a browser only uses the given ranges to selectively display characters.",
         keywords: ['unicode-range', 'range', 'unicode', 'subset'],
         browsers: [
-          { name: "ie", range: "-", support: "no" },
-          { name: "chrome", range: "-", support: "yes" },
-          { name: "firefox", range: "-", support: "no" },
-          { name: "safari", range: "-", support: "yes" },
-          { name: "ios", range: "-", support: "yes" },
+          { name: "ie", range: "-8", support: "no" },
+          { name: "ie", range: "9-", support: "partial", note: "Internet Explorer only supports the range syntax with an uppercase U (e.g. U+65, U+66). Support for lowercase ranges (e.g. u+65, u+66) was added to the CSS specification after Internet Explorer shipped, so you should always use ranges with an uppercase U for maximum compatibility." },
+          { name: "chrome", range: "-35", support: "partial" },
+          { name: "chrome", range: "36-", support: "yes" },
+          { name: "firefox", range: "-35", support: "no" },
+          { name: "firefox", range: "36-", support: "yes" },
+          { name: "safari", range: "-", support: "partial" },
+          { name: "ios", range: "-", support: "partial" },
           { name: "opera", range: "-12.16", support: "no" },
-          { name: "opera", range: "15-", support: "yes" },
+          { name: "opera", range: "15-22", support: "partial" },
+          { name: "opera", range: "23-", support: "yes" },
           { name: "android", range: "-3", support: "no" },
-          { name: "android", range: "4-", support: "yes" }
+          { name: "android", range: "4-", support: "partial" }
         ]
       }
     ]
