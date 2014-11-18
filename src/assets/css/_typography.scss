@@ -1,0 +1,87 @@
+// Typography
+// ---------------------------------------
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+// Site-wide base styles.
+body {
+  -webkit-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+  -moz-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+  -ms-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+  -o-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+  font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+
+  font-family: "jaf-facitweb", verdana, arial, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -ms-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+
+  color: #2A160A;
+  font-style: normal;
+  font-weight: 700;
+}
+
+// Links.
+a {
+  -webkit-transition: color .1s, background-color .1s;
+  -moz-transition: color .1s, background-color .1s;
+  -ms-transition: color .1s, background-color .1s;
+  -o-transition: color .1s, background-color .1s;
+  transition: color .1s, background-color .1s;
+
+  color: #396DBE;
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    color: lighten(#396DBE,25%);
+    text-decoration: none;
+  }
+}
+
+p, li {
+  -webkit-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+  -moz-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+  -ms-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+  -o-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+  font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+
+  color: #675E59;
+}
+
+b, strong, .bold {
+  font-weight: 700;
+}
+
+em, i, .italic {
+  font-style: italic;
+}
+
+sup {
+  -webkit-font-feature-settings: 'sups' 1;
+  -moz-font-feature-settings: 'sups' 1;
+  -ms-font-feature-settings: 'sups' 1;
+  -o-font-feature-settings: 'sups' 1;
+  font-feature-settings: 'sups' 1;
+}
+
+#result-count {
+  color: #AEA6A0;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0.5em;
+
+  a {
+    float: right;
+  }
+}

@@ -1,81 +1,23 @@
 <!doctype html>
 <html>
   <head>
-    <title>State of Web Type</title>
     <meta charset="utf-8">
-    <style>
-      body {
-        max-width: 800px;
-        margin: 4em auto;
-        font-family: jaf-facitweb, ff-meta-web-pro, sans-serif;
-        font-weight: 300;
-        font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
-        -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
-        -moz-font-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
-      }
-
-      table {
-        width: 100%;
-        text-align: left;
-        border-collapse: collapse;
-      }
-
-      table td {
-        vertical-align: top;
-        padding-bottom: 10px;
-      }
-
-      #search {
-        width: 100%;
-        line-height: 26px;
-      }
-
-      #result-count, #results, #splash-page {
-        display: none;
-      }
-
-      html.search #results, html.search #result-count {
-        display: block;
-      }
-
-      html.splash #splash-page {
-        display: block;
-      }
-
-      .inline-list, .inline-list li {
-        margin: 0;
-        padding: 0;
-        display: inline;
-      }
-
-      .inline-list li:after {
-        content: ', ';
-      }
-
-      .inline-list li:last-child:after {
-        content: '.';
-      }
-
-      #index {
-        column-width: 300px;
-        -webkit-column-width: 300px;
-        -moz-column-width: 300px;
-        -ms-column-width: 300px;
-      }
-
-      sup {
-        font-feature-settings: "sups" 1;
-        -webkit-font-feature-settings: "sups" 1;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State of Web Type</title>
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
   </head>
   <body>
-    <input id="search" placeholder="Enter a feature, e.g. font-face, ...">
-
-    <div id="result-count">
+    <div class="header container">
+      <h1>The State of Web Type</h1>
+      <p>Up-to-date data on support for type and typographic features on the web. Search or choose from the features below to get started. Follow <a href="https://www.twitter.com/bram_stein">@bram_stein</a> on Twitter for updates.</p>
+      <input id="search" placeholder="Enter a feature, e.g. font-face&hellip;">
     </div>
 
-    <div id="results">
+    <div id="result-count" class="container">
+    </div>
+
+    <div id="results" class="container">
     </div>
 
     <div id="splash-page">
@@ -84,12 +26,7 @@
     </div>
 
     <script type="template" id="count">
-      {{#singular}}
-      Found {{number}} feature.
-      {{/singular}}
-      {{^singular}}
-      Found {{number}} features.
-      {{/singular}}
+      {{number}} {{#singular}}feature{{/singular}}{{^singular}}features{{/singular}} found <a href="#">Back</a>
     </script>
     <script type="template" id="index-template">
       {{#index}}
@@ -159,7 +96,7 @@
     <script nobundle>
       (function(d) {
         var config = {
-          kitId: 'jra3ocz',
+          kitId: 'nst2vnq',
           scriptTimeout: 3000
         },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
