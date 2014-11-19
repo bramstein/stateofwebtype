@@ -7,6 +7,10 @@ module.exports = function(grunt) {
 
     clean: ['build'],
 
+    exec: {
+      livestyle: './node_modules/.bin/livestyle --compilesass --root src'
+    },
+
     mkdir: {
       build: {
         create: 'dist'
@@ -48,7 +52,8 @@ module.exports = function(grunt) {
         browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
         optimizeImages: true,
         inlineSize: 4096,
-        asyncScripts: true
+        asyncScripts: true,
+        scss: true
       })
       .writeAssetsToDisc({ url: /^file:/, isLoaded: true}, 'dist/' )
     .writeStatsToStderr()
@@ -57,4 +62,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['dist']);
   grunt.registerTask('dist', ['clean', 'mkdir', 'assetgraph']);
+  grunt.registerTask('dev', ['exec:livestyle']);
 };
