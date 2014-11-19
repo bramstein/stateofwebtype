@@ -1,0 +1,10 @@
+// SCSS variables
+// ---------------------------------------
+
+// Breakpoint sizes from px to ems. Add more values here to add more breakpoints.
+// Change names if you prefer, it wont break the mixin as long as they are strings not just numbers.
+$breakpoints: (
+  break-0: 0,     // 0px       Mobile first
+  break-1: 640,   // 640px   ~ Small tablet up
+  break-2: 1024,  // 1024px  ~ Desktop up
+);
