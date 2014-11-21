@@ -1,6 +1,6 @@
 define(function () {
   return {
-    name: "@font-face",
+    name: "font-face",
     description: "The @font-face rule lets you use any font as a web font. It is supported by the majority of browsers. While all browsers support the syntax, not every browser supports the same font format.",
     keywords: ['@font-face', 'fontface', 'font face', 'font', 'webfont'],
     browsers: [
