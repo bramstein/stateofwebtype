@@ -10,7 +10,7 @@
   <body>
     <div class="header container">
       <h1>The State of Web Type</h1>
-      <p>Up-to-date data on support for type and typographic features on the web. Search or choose from the features below to get started. Follow <a href="https://www.twitter.com/bram_stein">@bram_stein</a> on Twitter for updates.</p>
+      <p>Up-to-date data on support for type and typographic features on the web. <br>Search or choose from the features below to get&nbsp;started.</p>
       <input id="search" placeholder="Enter a feature, e.g. font-face&hellip;">
     </div>
 
@@ -23,6 +23,11 @@
     <div id="splash-page">
       <div id="index">
       </div>
+    </div>
+
+    <div id="about" class="container">
+      <h2>About this project</h2>
+      <p>test</p>
     </div>
 
     <script type="template" id="count">
@@ -92,6 +97,10 @@
         </ul>
       {{/hasRelations}}
     </script>
+    <div class="footer container">
+      <p>Find out more <a href="#about">about</a> this project</p>
+      <p>Maintained by <a href="https://www.twitter.com/bram_stein">@bram_stein</a>, design by <a href="https://www.twitter.com/designbyjake">@designbyjake</a></p>
+    </div>
     <script src="require.js" data-almond="almond.js" data-main="main"></script>
     <script nobundle>
       (function(d) {

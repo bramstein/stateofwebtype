@@ -1,0 +1,41 @@
+// General
+// ---------------------------------------
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+#result-count,
+#results,
+#splash-page,
+#about {
+  display: none;
+}
+
+html.search {
+
+  #results,
+  #result-count {
+    display: block;
+  }
+}
+
+html.splash {
+
+  #splash-page {
+    display: block;
+  }
+}
+
+html.about {
+
+  #about {
+    display: block;
+  }
+}

@@ -6,7 +6,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-// Site-wide base styles.
 body {
   -webkit-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
   -moz-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
@@ -14,6 +13,7 @@ body {
   -o-font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
   font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
 
+  color: $text;
   font-family: "jaf-facitweb", verdana, arial, sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -27,12 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
 
-  color: #2A160A;
+  color: $heading;
   font-style: normal;
   font-weight: 700;
 }
 
-// Links.
 a {
   -webkit-transition: color .1s, background-color .1s;
   -moz-transition: color .1s, background-color .1s;
@@ -40,11 +39,11 @@ a {
   -o-transition: color .1s, background-color .1s;
   transition: color .1s, background-color .1s;
 
-  color: #396DBE;
+  color: $link;
   text-decoration: none;
 
   &:hover, &:active, &:focus {
-    color: lighten(#396DBE,25%);
+    color: $hover;
     text-decoration: none;
   }
 }
@@ -55,8 +54,6 @@ p, li {
   -ms-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
   -o-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
   font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
-
-  color: #675E59;
 }
 
 b, strong, .bold {
@@ -75,13 +72,18 @@ sup {
   font-feature-settings: 'sups' 1;
 }
 
-#result-count {
-  color: #AEA6A0;
-  font-size: 0.8em;
-  text-align: center;
-  margin-top: 0.5em;
+h1,h2,h3,h4,h5,h6,p,li,table,input {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .1s;
+  -moz-transition: opacity .1s;
+  -ms-transition: opacity .1s;
+  -o-transition: opacity .1s;
+  transition: opacity .1s;
 
-  a {
-    float: right;
+  html.wf-active &,
+  html.wf-inactive & {
+    visibility: visible;
+    opacity: 1;
   }
 }

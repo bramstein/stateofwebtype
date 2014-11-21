@@ -1,4 +1,4 @@
-// SCSS variables
+// Variables
 // ---------------------------------------
 
 // Breakpoint sizes from px to ems. Add more values here to add more breakpoints.
@@ -8,3 +8,11 @@ $breakpoints: (
   break-1: 640,   // 640px   ~ Small tablet up
   break-2: 1024,  // 1024px  ~ Desktop up
 );
+
+// Colours
+$text: #767676;
+$light-text: #CACACA;
+$heading: #413E3C;
+$link: #396DBE;
+$hover: lighten($link,25%);
+$light-rule: #f0f0f0;

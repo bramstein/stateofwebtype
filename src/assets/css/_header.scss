@@ -1,0 +1,107 @@
+// Header
+// ---------------------------------------
+
+.header {
+  -webkit-transition: margin .2s;
+  -moz-transition: margin .2s;
+  -ms-transition: margin .2s;
+  -o-transition: margin .2s;
+  transition: margin .2s;
+
+  margin-top: 2em;
+  text-align: center;
+
+
+  h1 {
+    -webkit-transition: font-size .1s;
+    -moz-transition: font-size .1s;
+    -ms-transition: font-size .1s;
+    -o-transition: font-size .1s;
+    transition: font-size .1s;
+
+    font-family: "kinesis-pro-3", Georgia, Times, serif;
+    font-size: 9vw;
+    font-weight: 700;
+
+    @include breakpoint(break-2) {
+      font-size: 5em;
+    }
+  }
+
+  p {
+    -webkit-transition: opacity .1s, max-height .1s, margin .1s;
+    -moz-transition: opacity .1s, max-height .1s, margin .1s;
+    -ms-transition: opacity .1s, max-height .1s, margin .1s;
+    -o-transition: opacity .1s, max-height .1s, margin .1s;
+    transition: opacity .1s, max-height .1s, margin .1s;
+
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    max-height: 100em;
+    opacity: 1;
+
+    br {
+      display: none;
+    }
+
+    @include breakpoint(break-1) {
+      font-size: 1em;
+
+      br {
+        display: inherit;
+      }
+    }
+  }
+
+  html.search & {
+    margin-top: 1em;
+
+    h1 {
+      font-size: 6vw;
+
+      @include breakpoint(break-2) {
+        font-size: 3em;
+      }
+    }
+
+    p {
+      margin-bottom: 1em;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+#result-count {
+  color: $light-text;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+
+  a {
+    float: right;
+  }
+}
+
+#search {
+  -webkit-transition: border-color .2s;
+  -moz-transition: border-color .2s;
+  -ms-transition: border-color .2s;
+  -o-transition: border-color .2s;
+  transition: border-color .2s;
+
+  background: white url(/assets/img/search.svg) 97.5% 13px no-repeat;
+  background-size: 18px 18px;
+  border: 1px solid $light-text;
+  border-radius: 2px;
+  font-size: 1em;
+  line-height: 1.5;
+  outline: none;
+  padding: 10px 45px 9px 15px;
+  width: 100%;
+  -webkit-appearance: none;
+
+  &:focus {
+    border: 1px solid $text;
+  }
+}

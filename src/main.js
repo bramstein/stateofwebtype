@@ -2,10 +2,11 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
   var featureTemplate = document.getElementById('feature').innerHTML,
       resultCountTemplate = document.getElementById('count').innerHTML,
       indexTemplate = document.getElementById('index-template').innerHTML,
-      resultCountWrapper = document.getElementById('result-count')
+      resultCountWrapper = document.getElementById('result-count'),
       resultsWrapper = document.getElementById('results'),
       splashWrapper = document.getElementById('splash-page'),
       indexWrapper = document.getElementById('index'),
+      aboutWrapper = document.getElementById('about'),
       search = document.getElementById('search');
 
   function walk(features, fn) {
@@ -72,7 +73,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
         index = [];
 
     walk(features, function (feature) {
-      var firstChar = feature.name.charAt(0).toLocaleLowerCase()
+      var firstChar = feature.name.charAt(0).toLocaleLowerCase();
 
       if (!tmp[firstChar]) {
         tmp[firstChar] = [];

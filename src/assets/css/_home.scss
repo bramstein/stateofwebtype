@@ -1,0 +1,42 @@
+// Home
+// ---------------------------------------
+
+#index {
+  column-width: 300px;
+  -webkit-column-width: 300px;
+  -moz-column-width: 300px;
+  -ms-column-width: 300px;
+
+  column-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  -ms-column-gap: 30px;
+
+  h2 {
+    border-bottom: 1px solid $light-rule;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-bottom: 1.3em;
+
+    li {
+      margin-bottom: 0.2em;
+    }
+  }
+}
+
+#splash-page {
+  @extend .container;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include breakpoint(break-2) {
+    max-width: 1650px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+}
