@@ -58,17 +58,23 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     };
   }
 
-  function renderFeatures(features) {
+  function showResults(features) {
     resultsWrapper.innerHTML = features.map(function (feature) {
       return Mustache.render(featureTemplate, feature);
     }).join('');
-  }
 
-  function renderResultCount(features) {
     resultCountWrapper.innerHTML = Mustache.render(resultCountTemplate, { number: features.length, singular: features.length === 1 });
+
+    document.documentElement.classList.add('search');
   }
 
-  function renderIndex() {
+  function hideResults() {
+    document.documentElement.classList.remove('search');
+    resultsWrapper.innerHTML = '';
+    resultCountWrapper.innerHTML = '';
+  }
+
+  function showIndex() {
     var tmp = {},
         index = [];
 
@@ -94,50 +100,42 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     });
 
     indexWrapper.innerHTML = Mustache.render(indexTemplate, { index: index });
+    document.documentElement.classList.add('splash');
   }
 
-  function onHashChange() {
-    var hash = decodeURIComponent(location.hash.replace('#', ''));
-
-    if (!/^\s*$/g.test(hash)) {
-      search.value = hash;
-      var results = find(hash.trim());
-      renderFeatures(results);
-      renderResultCount(results);
-      document.documentElement.classList.remove('splash');
-      document.documentElement.classList.add('search');
-    } else {
-      search.value = '';
-      document.documentElement.classList.remove('search');
-      document.documentElement.classList.add('splash');
-      renderIndex();
-    }
+  function hideIndex() {
+    document.documentElement.classList.remove('splash');
   }
 
   var updateHash = debounce(function () {
     location.hash = "#" + encodeURIComponent(search.value.trim());
   }, 1000);
 
+  function onHashChange() {
+    var hash = decodeURIComponent(location.hash.replace('#', ''));
+
+    if (!/^\s*$/g.test(hash)) {
+      search.value = hash;
+      showResults(find(hash.trim()));
+      hideIndex();
+    } else {
+      search.value = '';
+      hideResults();
+      showIndex();
+    }
+  }
+
   search.addEventListener('input', function (e) {
     var input = search.value.trim();
 
     if (input !== "") {
-      if (document.documentElement.classList.contains("splash")) {
-        document.documentElement.classList.remove("splash");
-        document.documentElement.classList.add("search");
-      }
       var results = find(input);
 
-      renderFeatures(results);
-      renderResultCount(results);
+      hideIndex();
+      showResults(find(input));
     } else {
-      if (document.documentElement.classList.contains("search")) {
-        document.documentElement.classList.remove("search");
-        document.documentElement.classList.add("splash");
-      }
-      renderFeatures([]);
-      renderResultCount([]);
-      renderIndex();
+      hideResults();
+      showIndex();
     }
     updateHash();
   }, true);
