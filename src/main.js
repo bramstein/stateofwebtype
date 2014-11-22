@@ -107,6 +107,7 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
       document.documentElement.classList.remove('splash');
       document.documentElement.classList.add('search');
     } else {
+      search.value = '';
       document.documentElement.classList.remove('search');
       document.documentElement.classList.add('splash');
       renderIndex();
