@@ -1,6 +1,7 @@
 define([
     'Version',
     'browsers',
+    'marked',
     'data/values',
     'data/font-face',
     'data/font-feature-settings',
@@ -14,6 +15,7 @@ define([
   ], function (
     Version,
     browsers,
+    marked,
     values,
     fontface,
     fontFeatureSettings,
@@ -104,12 +106,13 @@ define([
               };
 
               if (data.note) {
+                var note = marked(data.note, { smartypants: true });
                 entry.hasNote = true;
 
-                if (notes.indexOf(data.note) !== -1) {
-                  entry.note = notes.indexOf(data.note) + 1;
+                if (notes.indexOf(note) !== -1) {
+                  entry.note = notes.indexOf(note) + 1;
                 } else {
-                  notes.push(data.note);
+                  notes.push(note);
                   entry.note = notes.length;
                 }
               }
@@ -121,6 +124,9 @@ define([
       });
       feature.browsers = result;
       feature.notes = notes;
+      if (feature.description) {
+        feature.description = marked(feature.description, { smartypants: true });
+      }
       feature.hasNotes = notes.length !== 0;
     } else {
       console.error('Feature "' + feature.name  + '" does not have browser support data.');

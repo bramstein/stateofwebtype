@@ -45,9 +45,7 @@
     </script>
     <script type="template" id="feature">
       <h1>{{name}}</h1>
-      {{#description}}
-        <p>{{.}}</p>
-      {{/description}}
+      {{{description}}}
       {{#required}}
         <p>This feature is required to be enabled by the CSS specification.</p>
       {{/required}}
@@ -84,7 +82,7 @@
       {{#hasNotes}}
         <ol>
           {{#notes}}
-            <li>{{.}}</li>
+            <li>{{{.}}}</li>
           {{/notes}}
         </ol>
       {{/hasNotes}}

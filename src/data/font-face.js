@@ -1,7 +1,7 @@
 define(function () {
   return {
     name: "font-face",
-    description: "The @font-face rule lets you use any font as a web font. It is supported by the majority of browsers. While all browsers support the syntax, not every browser supports the same font format.",
+    description: "The @font-face rule lets you use any font as a web font. It is supported by the majority of browsers. While all browsers support the syntax, not every browser supports the same [font format](#font%20format).",
     keywords: ['@font-face', 'fontface', 'font face', 'font', 'webfont'],
     browsers: [
       { name: "ie", range: "-", support: "yes", note: "Internet Explorer 6, 7, and 8 only support the Embedded OpenType (EOT) format. Internet Explorer 9 and above supports multiple formats." },
