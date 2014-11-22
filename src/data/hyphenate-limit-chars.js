@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-chars",
+    keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "limit", "character"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },

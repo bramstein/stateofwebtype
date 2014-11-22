@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-zone",
+    keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },

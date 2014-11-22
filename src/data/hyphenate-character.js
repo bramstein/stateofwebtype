@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-character",
+    keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "character"],
     browsers: [
       { name: "ie",      range: "-",   support: "no" },
       { name: "chrome",  range: "-",   support: "yes" },
