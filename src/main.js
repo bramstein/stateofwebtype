@@ -1,3 +1,10 @@
+require.config({
+  baseUrl: '/js',
+  paths: {
+    data: "/data"
+  }
+});
+
 require(['mustache', 'browsers', 'features'], function (Mustache, browsers, features) {
   var featureTemplate = document.getElementById('feature').innerHTML,
       resultCountTemplate = document.getElementById('count').innerHTML,
