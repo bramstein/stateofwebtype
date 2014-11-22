@@ -26,6 +26,14 @@
     @include breakpoint(break-2) {
       font-size: 5em;
     }
+
+    a {
+      color: $heading;
+      transition: color .2s;
+      &:hover {
+        color: $link;
+      }
+    }
   }
 
   p {
