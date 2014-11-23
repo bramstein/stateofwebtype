@@ -67,9 +67,15 @@ define([
     });
   }
 
-  function init(feature) {
+  function init(feature, parent) {
     if (!feature.name) {
       throw new Error('Feature does not have a name.');
+    }
+
+    if (parent) {
+      feature.parent = parent;
+    } else {
+      feature.parent = null;
     }
 
     if (feature.browsers) {
@@ -133,7 +139,9 @@ define([
     }
 
     if (feature.features) {
-      feature.features = feature.features.map(init);
+      feature.features = feature.features.map(function (f) {
+        return init(f, feature);
+      });
 
       var seeAlso = [];
       feature.hasRelations = true;
@@ -141,7 +149,18 @@ define([
       feature.seeAlso = seeAlso.sort(function (a, b) {
         return a.localeCompare(b);
       });
+
     }
+
+    var path = [],
+        current = feature;
+
+    do {
+      path.push(current.name);
+      current = current.parent;
+    } while (current !== null);
+
+    feature.path = path.reverse();
 
     return feature;
   }
