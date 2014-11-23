@@ -114,6 +114,14 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     document.documentElement.classList.remove('splash');
   }
 
+  function showAbout() {
+    document.documentElement.classList.add('about');
+  }
+
+  function hideAbout() {
+    document.documentElement.classList.remove('about');
+  }
+
   var updateHash = debounce(function () {
     location.hash = "#" + encodeURIComponent(search.value.trim());
   }, 1000);
@@ -121,13 +129,19 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
   function onHashChange() {
     var hash = decodeURIComponent(location.hash.replace('#', ''));
 
-    if (!/^\s*$/g.test(hash)) {
+    if (hash === 'about') {
+      hideResults();
+      hideIndex();
+      showAbout();
+    } else if (!/^\s*$/g.test(hash)) {
       search.value = hash;
       showResults(find(hash.trim()));
       hideIndex();
+      hideAbout();
     } else {
       search.value = '';
       hideResults();
+      hideAbout();
       showIndex();
     }
   }
@@ -139,9 +153,11 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
       var results = find(input);
 
       hideIndex();
+      hideAbout();
       showResults(find(input));
     } else {
       hideResults();
+      hideAbout();
       showIndex();
     }
     updateHash();
