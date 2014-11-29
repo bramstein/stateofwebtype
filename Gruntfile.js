@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     clean: ['build'],
 
     exec: {
-      livestyle: './node_modules/.bin/livestyle --compilesass --root src'
+      livestyle: './node_modules/.bin/livestyle --compilesass --autoprefixer --root src'
     },
 
     mkdir: {
@@ -41,12 +41,6 @@ module.exports = function(grunt) {
           }
         }
       })
-      .removeRelations({
-        type: 'HtmlScript',
-        to: {
-          url: /prefixfree\.js/
-        }
-      }, { detach: true , removeOrphan: true, unresolved: true })
       .buildProduction({
         recursive: false,
         browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],

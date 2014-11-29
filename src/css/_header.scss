@@ -2,10 +2,6 @@
 // ---------------------------------------
 
 .header {
-  -webkit-transition: margin .2s;
-  -moz-transition: margin .2s;
-  -ms-transition: margin .2s;
-  -o-transition: margin .2s;
   transition: margin .2s;
 
   margin-top: 2em;
@@ -13,10 +9,6 @@
 
 
   h1 {
-    -webkit-transition: font-size .1s;
-    -moz-transition: font-size .1s;
-    -ms-transition: font-size .1s;
-    -o-transition: font-size .1s;
     transition: font-size .1s;
 
     font-family: "kinesis-pro-3", Georgia, Times, serif;
@@ -37,10 +29,6 @@
   }
 
   p {
-    -webkit-transition: opacity .1s, max-height .1s, margin .1s;
-    -moz-transition: opacity .1s, max-height .1s, margin .1s;
-    -ms-transition: opacity .1s, max-height .1s, margin .1s;
-    -o-transition: opacity .1s, max-height .1s, margin .1s;
     transition: opacity .1s, max-height .1s, margin .1s;
 
     font-size: 0.8em;
@@ -92,10 +80,6 @@
 }
 
 #search {
-  -webkit-transition: border-color .2s;
-  -moz-transition: border-color .2s;
-  -ms-transition: border-color .2s;
-  -o-transition: border-color .2s;
   transition: border-color .2s;
 
   background: white url(/img/search.svg) 97.5% 13px no-repeat;
