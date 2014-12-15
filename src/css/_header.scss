@@ -11,9 +11,10 @@
   h1 {
     transition: font-size .1s;
 
-    font-family: "kinesis-pro-3", Georgia, Times, serif;
+    font-family: "kinesis-pro-3", "Kinesis Pro 3", Georgia, Times, serif;
     font-size: 9vw;
     font-weight: 700;
+    line-height: 1.1;
 
     @include breakpoint(break-2) {
       font-size: 5em;
