@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-character",
+    description: "The `hyphenate-character` property is used to set a custom hyphenation character for automatically hyphenated text.",
     specification: "http://dev.w3.org/csswg/css-text-4/#hyphenate-character",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "character"],
     browsers: [
