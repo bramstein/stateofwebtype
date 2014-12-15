@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'calt' 1;
 
   color: $heading;
   font-style: normal;
@@ -50,7 +50,7 @@ em, i, .italic {
 
 sup {
   font-size: 67%;
-  font-feature-settings: 'sups' 1;
+  font-feature-settings: 'sups' 1, 'kern' 1;
 }
 
 h1,h2,h3,h4,h5,h6,p,li,table,input {
