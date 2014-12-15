@@ -33,3 +33,13 @@
     margin-bottom: 4em;
   }
 }
+
+#about {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include breakpoint(break-2) {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+}

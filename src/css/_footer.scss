@@ -32,6 +32,17 @@
     }
   }
 
+  .about & {
+
+    p:first-child {
+      display: none;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
   @include breakpoint(break-2) {
     margin-top: 6em;
     margin-bottom: 4em;

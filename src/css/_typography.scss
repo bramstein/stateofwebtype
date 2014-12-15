@@ -63,3 +63,37 @@ h1,h2,h3,h4,h5,h6,p,li,table,input {
     opacity: 1;
   }
 }
+
+.typeset {
+
+  h2 {
+    font-size: 1.125em;
+    margin-bottom: 1em;
+
+    @include breakpoint(break-1) {
+      font-size: 1.5em;
+      margin-bottom: 0.75em;
+    }
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+
+    @include breakpoint(break-1) {
+      font-size: 1.25em;
+    }
+  }
+
+  p {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+
+    @include breakpoint(break-1) {
+      font-size: 1em;
+      line-height: 1.7;
+    }
+  }
+}
