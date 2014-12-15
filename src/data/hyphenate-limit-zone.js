@@ -1,7 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-zone",
-    descriptions: "http://dev.w3.org/csswg/css-text-4/#hyphenate-limit-zone",
+    specification: "http://dev.w3.org/csswg/css-text-4/#hyphenate-limit-zone",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },
