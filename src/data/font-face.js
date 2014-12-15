@@ -16,7 +16,7 @@ define(function () {
     features: [
       {
         name: "font-family",
-        description: "The `font-family` property names a web font.",
+        description: "The `font-family` property (when used inside an @font-face rule) gives a web font a name by which it can be referenced in a CSS font stack.",
         specification: "http://www.w3.org/TR/css3-fonts/#font-family-desc",
         keywords: ['font-family', 'family', 'font', 'typeface'],
         browsers: [
@@ -68,6 +68,7 @@ define(function () {
           },
           {
             name: "WOFF2",
+            description: "The Web Open Font Format 2 (WOFF2) is a compressed container format for either [TrueType or OpenType fonts](#TTF/OTF). It offers higher compression rates than WOFF at the expense of compression time.",
             specification: "http://www.w3.org/TR/WOFF2/",
             keywords: ['woff', 'format', 'web font format', 'font format'],
             browsers: [
@@ -84,6 +85,7 @@ define(function () {
           },
           {
             name: "EOT",
+            description: "The Embedded OpenType format is Microsoft's proprietary font format used exclusively in Internet Explorer. It is a container format that can contain either [TrueType or OpenType fonts](#TTF/OTF) (though the format supports OpenType fonts, Internet Explorer 8 and earlier do not). EOT fonts can optionally be compressed, but are usually not.",
             specification: "http://www.w3.org/Submission/EOT/",
             keywords: ['eot', 'format', 'web font format', 'font format', 'embedded opentype'],
             browsers: [
@@ -98,6 +100,7 @@ define(function () {
           },
           {
             name: "TTF/OTF",
+            description: "The TrueType and OpenType font formats are raw unmodified fonts. While browser support is fairly good for these formats, it is highly recommended to use either WOFF2 or WOFF in order to reduce file size.",
             specification: "http://www.microsoft.com/typography/otspec/",
             keywords: ['ttf', 'truetype', 'opentype', 'otf', 'format', 'web font format', 'font format'],
             browsers: [
@@ -114,6 +117,7 @@ define(function () {
           },
           {
             name: "SVG fonts",
+            description: "SVG fonts are outlines generated from either TrueType or OpenType fonts. They lack many of the required features necessary to properly display text, nor do they support advanced OpenType features. Recently they have also been marked as deprecated in Chrome and Opera. **Do not use them**.",
             specification: "http://www.w3.org/TR/SVG/fonts.html",
             keywords: ['svg', 'vector', 'scalable', 'graphics', 'format', 'web font format', 'font format'],
             browsers: [
@@ -132,6 +136,7 @@ define(function () {
       },
       {
         name: "font-weight",
+        description: "When used inside a `@font-face` rule the `font-weight` property is used to classify a web font as having a certain weight. This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-weight",
         keywords: ['font-weight', 'bold', 'weight'],
         browsers: [
@@ -146,6 +151,7 @@ define(function () {
       },
       {
         name: "font-style",
+        description: "When used inside a `@font-face` rule the `font-style` property is used to classify a web font as having a certain style (e.g. `italic`, `oblique`). This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-style",
         keywords: ['font-style', 'style', 'italic', 'oblique'],
         browsers: [
@@ -160,6 +166,7 @@ define(function () {
       },
       {
         name: "font-stretch",
+        description: "When used inside a `@font-face` rule the `font-stretch` property is used to classify a web font as having a certain style (e.g. condensed, expanded). This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-stretch",
         keywords: ['font-stretch', 'stretch', 'condensed', 'expanded'],
         browsers: [
@@ -176,6 +183,7 @@ define(function () {
       },
       {
         name: "font-variant",
+        description: "When used inside a `@font-face` rule the `font-variant` property is used to specify a default font variation for the web font.",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-variant",
         keywords: ['font-variant', 'variant', 'small-caps'],
         browsers: [
@@ -191,7 +199,7 @@ define(function () {
       {
         name: "font-feature-settings (font-face)",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-feature-settings",
-        description: "The font-feature-settings property can be used to set default OpenType features within @font-face rules.",
+        description: "The `font-feature-settings` property can be used to set default OpenType features within @font-face rules.",
         keywords: ['font-feature-settings', 'feature-settings', 'feature', 'features', 'ligatures', 'small-caps', 'opentype'],
         browsers: [
           { name: "ie", range: "-", support: "no" },
