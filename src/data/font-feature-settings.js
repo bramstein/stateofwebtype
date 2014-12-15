@@ -2,6 +2,7 @@ define(function () {
   return {
     name: "font-feature-settings",
     description: "The font-feature-settings property can be used to enable or disable OpenType features.",
+    specification: "http://www.w3.org/TR/css3-fonts/#font-feature-settings-prop",
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },

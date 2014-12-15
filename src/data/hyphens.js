@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphens",
+    specification: "http://www.w3.org/TR/css3-text/#hyphens-property",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },

@@ -1,6 +1,8 @@
 define(function () {
   return {
     name: "font-kerning",
+    specification: "http://www.w3.org/TR/css3-fonts/#font-kerning-prop",
+    keywords: ["kern", "kerning"],
     browsers: [
       { name: "ie",      range: "-",  support: "no" },
       { name: "chrome",  range: "-",  support: "no" },

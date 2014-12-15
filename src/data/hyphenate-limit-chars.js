@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-chars",
+    specification: "http://dev.w3.org/csswg/css-text-4/#hyphenate-limit-chars",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "limit", "character"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },

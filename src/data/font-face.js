@@ -1,7 +1,8 @@
 define(function () {
   return {
     name: "font-face",
-    description: "The @font-face rule lets you use any font as a web font. It is supported by the majority of browsers. While all browsers support the syntax, not every browser supports the same [font format](#font%20format).",
+    description: "The @font-face rule lets you use any font as a web font. It is supported by the majority of browsers. While all browsers support the syntax, not every browser supports the same [font format](#font%20format).\n",
+    specification: "http://www.w3.org/TR/css3-fonts/#font-face-rule",
     keywords: ['@font-face', 'fontface', 'font face', 'font', 'webfont'],
     browsers: [
       { name: "ie", range: "-", support: "yes", note: "Internet Explorer 6, 7, and 8 only support the Embedded OpenType (EOT) format. Internet Explorer 9 and above supports multiple formats." },
@@ -15,6 +16,8 @@ define(function () {
     features: [
       {
         name: "font-family",
+        description: "The `font-family` property names a web font.",
+        specification: "http://www.w3.org/TR/css3-fonts/#font-family-desc",
         keywords: ['font-family', 'family', 'font', 'typeface'],
         browsers: [
           { name: "ie", range: "-", support: "yes", note: "Internet Explorer limits the length of a font-family to 32 characters." },
@@ -28,9 +31,11 @@ define(function () {
       },
       {
         name: "src",
+        description: "The `src` property specifies one or more locations for font data. An optional format hint describes the format the font is in. This can be used by the browser to select a preferred font format. Support for [font formats](#font%format) differs from browser to browser.",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-src",
         keywords: ['font', 'src'],
         browsers: [
-          { name: "ie", range: "6-8", support: "partial", note: "Internet Explorer 6 to 8 only support a single url." },
+          { name: "ie", range: "6-8", support: "partial", note: "Internet Explorer 6 to 8 only support a single url, and always download fonts immediately (instead of checking to see if they are used." },
           { name: "ie", range: "9-", support: "yes" },
           { name: "chrome", range: "-", support: "yes" },
           { name: "firefox", range: "-", support: "yes" },
@@ -42,6 +47,8 @@ define(function () {
         features: [
           {
             name: "WOFF",
+            description: "The Web Open Font Format (WOFF) is a compressed container format for either [TrueType or OpenType fonts](#TTF/OTF).",
+            specification: "http://www.w3.org/TR/WOFF/",
             keywords: ['woff', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-8", support: "no", note: "Internet Explorer 6 to 8 only support Embedded OpenType (EOT)." },
@@ -61,6 +68,7 @@ define(function () {
           },
           {
             name: "WOFF2",
+            specification: "http://www.w3.org/TR/WOFF2/",
             keywords: ['woff', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-", support: "no" },
@@ -76,6 +84,7 @@ define(function () {
           },
           {
             name: "EOT",
+            specification: "http://www.w3.org/Submission/EOT/",
             keywords: ['eot', 'format', 'web font format', 'font format', 'embedded opentype'],
             browsers: [
               { name: "ie", range: "-", support: "yes", note: "The EOT format only supports embedding TrueType fonts in Internet Explorer 8 and below." },
@@ -89,6 +98,7 @@ define(function () {
           },
           {
             name: "TTF/OTF",
+            specification: "http://www.microsoft.com/typography/otspec/",
             keywords: ['ttf', 'truetype', 'opentype', 'otf', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-8", support: "no" },
@@ -104,6 +114,7 @@ define(function () {
           },
           {
             name: "SVG fonts",
+            specification: "http://www.w3.org/TR/SVG/fonts.html",
             keywords: ['svg', 'vector', 'scalable', 'graphics', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-", support: "no" },
@@ -121,6 +132,7 @@ define(function () {
       },
       {
         name: "font-weight",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-weight",
         keywords: ['font-weight', 'bold', 'weight'],
         browsers: [
           { name: "ie", range: "-", support: "yes" },
@@ -134,6 +146,7 @@ define(function () {
       },
       {
         name: "font-style",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-style",
         keywords: ['font-style', 'style', 'italic', 'oblique'],
         browsers: [
           { name: "ie", range: "-", support: "yes" },
@@ -147,6 +160,7 @@ define(function () {
       },
       {
         name: "font-stretch",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-stretch",
         keywords: ['font-stretch', 'stretch', 'condensed', 'expanded'],
         browsers: [
           { name: "ie", range: "-8", support: "no" },
@@ -162,6 +176,7 @@ define(function () {
       },
       {
         name: "font-variant",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-variant",
         keywords: ['font-variant', 'variant', 'small-caps'],
         browsers: [
           { name: "ie", range: "-", support: "no" },
@@ -175,6 +190,7 @@ define(function () {
       },
       {
         name: "font-feature-settings (font-face)",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-feature-settings",
         description: "The font-feature-settings property can be used to set default OpenType features within @font-face rules.",
         keywords: ['font-feature-settings', 'feature-settings', 'feature', 'features', 'ligatures', 'small-caps', 'opentype'],
         browsers: [
@@ -191,6 +207,7 @@ define(function () {
       {
         name: "unicode-range",
         description: "The unicode-range property offers a way to tell the browser which unicode characters are included in a font. It can use this information to selectively download and display fonts. For a browser to have full support it must both download and display the font selectively. Partial support means that a browser only uses the given ranges to selectively display characters.",
+        specification: "http://www.w3.org/TR/css3-fonts/#descdef-unicode-range",
         keywords: ['unicode-range', 'range', 'unicode', 'subset'],
         browsers: [
           { name: "ie", range: "-8", support: "no" },

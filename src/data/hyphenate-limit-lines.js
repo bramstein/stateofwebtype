@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-lines",
+    specification: "http://dev.w3.org/csswg/css-text-4/#hyphenate-limit-lines",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },

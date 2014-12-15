@@ -1,6 +1,7 @@
 define(function () {
   return {
     name: "hyphenate-limit-last",
+    specification: "http://dev.w3.org/csswg/css-text-4/#hyphenate-limit-last",
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "limit"],
     browsers: [
       { name: "ie", range: "-9", support: "no" },
