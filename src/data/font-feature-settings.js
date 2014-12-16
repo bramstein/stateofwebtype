@@ -24,7 +24,7 @@ define(function () {
     features: [
       {
         name: "Standard Ligatures (liga)",
-        description: "Read about [using common ligatures in CSS](http://help.typekit.com/customer/portal/articles/1789736#liga) on the Typekit help documentation.",
+        description: "Read about [using common/standard ligatures in CSS](http://help.typekit.com/customer/portal/articles/1789736#liga) on the Typekit help documentation.",
         keywords: ["liga", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
