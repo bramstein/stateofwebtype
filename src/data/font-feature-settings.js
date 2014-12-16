@@ -24,6 +24,7 @@ define(function () {
     features: [
       {
         name: "Standard Ligatures (liga)",
+        description: "Read about [using common ligatures in CSS](http://help.typekit.com/customer/portal/articles/1789736#liga) on the Typekit help documentation.",
         keywords: ["liga", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -45,6 +46,7 @@ define(function () {
       },
       {
         name: "Contextual Ligatures (clig)",
+        description: "Read about [using contextual ligatures in CSS](http://help.typekit.com/customer/portal/articles/1789736#liga) on the Typekit help documentation.",
         keywords: ["clig", "ligatures", "opentype features"],
         required: true,
         browsers: [
@@ -65,6 +67,7 @@ define(function () {
       },
       {
         name: "Discretionary Ligatures (dlig)",
+        description: "Read about [using discretionary ligatures in CSS](http://help.typekit.com/customer/portal/articles/1789736#dlig) on the Typekit help documentation.",
         keywords: ["clig", "ligatures", "opentype features"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -119,6 +122,7 @@ define(function () {
       },
       {
         name: "Small Capitals (smcp)",
+        description: "Read about [using small caps in CSS](http://help.typekit.com/customer/portal/articles/1789736#smcp) on the Typekit help documentation.",
         keywords: ["smcp", "opentype features", "small caps", "small-caps", "smallcaps", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -136,6 +140,7 @@ define(function () {
       },
       {
         name: "Small Capitals From Capitals (c2sc)",
+        description: "Read about [using capitals to small caps in CSS](http://help.typekit.com/customer/portal/articles/1789736#c2sc) on the Typekit help documentation.",
         keywords: ["c2sc", "opentype features", "small capitals", "capitals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -221,6 +226,7 @@ define(function () {
       },
       {
         name: "Lining Numbers (lnum)",
+        description: "Read about [using lining numbers in CSS](http://help.typekit.com/customer/portal/articles/1789736#lnum) on the Typekit help documentation.",
         keywords: ["lnum", "opentype features", "lining numbers", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -238,6 +244,7 @@ define(function () {
       },
       {
         name: "Oldstyle Numerals (onum)",
+        description: "Read about [using oldstyle numerals in CSS](http://help.typekit.com/customer/portal/articles/1789736#onum) on the Typekit help documentation.",
         keywords: ["onum", "opentype features", "oldstyle", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -255,6 +262,7 @@ define(function () {
       },
       {
         name: "Proportional Numbers (pnum)",
+        description: "Read about [using proportional numbers in CSS](http://help.typekit.com/customer/portal/articles/1789736#pnum) on the Typekit help documentation.",
         keywords: ["pnum", "opentype features", "proportional numbers", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -272,6 +280,7 @@ define(function () {
       },
       {
         name: "Tabular Numbers (tnum)",
+        description: "Read about [using tabular numbers in CSS](http://help.typekit.com/customer/portal/articles/1789736#tnum) on the Typekit help documentation.",
         keywords: ["tnum", "opentype features", "tabular numbers", "table", "numerals", "numbers", "figures"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -306,6 +315,7 @@ define(function () {
       },
       {
         name: "Superscript (sups)",
+        description: "Read about [using superscript in CSS](http://help.typekit.com/customer/portal/articles/1789736#sups) on the Typekit help documentation.",
         keywords: ["sups", "opentype features", "superscript", "super script"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -323,6 +333,7 @@ define(function () {
       },
       {
         name: "Subscript (subs)",
+        description: "Read about [using subscript in CSS](http://help.typekit.com/customer/portal/articles/1789736#subs) on the Typekit help documentation.",
         keywords: ["subs", "opentype features", "subscript", "sub script"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -391,6 +402,7 @@ define(function () {
       },
       {
         name: "Ordinals (ordn)",
+        description: "Read about [using ordinals in CSS](http://help.typekit.com/customer/portal/articles/1789736#ordn) on the Typekit help documentation.",
         keywords: ["ordn", "opentype features", "ordinals"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -408,6 +420,7 @@ define(function () {
       },
       {
         name: "Fractions (frac)",
+        description: "Read about [using fractions in CSS](http://help.typekit.com/customer/portal/articles/1789736#frac) on the Typekit help documentation.",
         keywords: ["frac", "opentype features", "fraction"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -598,6 +611,7 @@ define(function () {
       },
       {
         name: "Swashes (swsh)",
+        description: "Read about [using swashes in CSS](http://help.typekit.com/customer/portal/articles/1789736#swsh) on the Typekit help documentation.",
         keywords: ["swsh", "opentype features", "swash"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -632,6 +646,7 @@ define(function () {
       },
       {
         name: "Contextual Alternates (calt)",
+        description: "Read about [using contextual alternates in CSS](http://help.typekit.com/customer/portal/articles/1789736#calt) on the Typekit help documentation.",
         required: true,
         keywords: ["calt", "opentype features", "contextual", "alternates"],
         browsers: [
@@ -652,6 +667,7 @@ define(function () {
       },
       {
         name: "Stylistic Alternates (salt)",
+        description: "Read about [using stylistic alternates in CSS](http://help.typekit.com/customer/portal/articles/1789736#salt) on the Typekit help documentation.",
         keywords: ["salt", "opentype features", "stylistic", "alternates"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
@@ -669,6 +685,7 @@ define(function () {
       },
       {
         name: "Stylistic Sets (ssxx)",
+        description: "Read about [using stylistic sets in CSS](http://help.typekit.com/customer/portal/articles/1789736#ss##) on the Typekit help documentation.",
         keywords: ["ss00", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20", "opentype features", "stylistic", "sets"],
         browsers: [
           { name: "ie", range: "-9", support: "no" },
