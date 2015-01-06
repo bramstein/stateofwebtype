@@ -466,7 +466,7 @@ define(function () {
           { name: "safari", range: "-6", support: "no" },
           { name: "safari", range: "7-", support: "yes", note: "Kerning is enabled by default.", default: true, locked: true },
           { name: "ios", range: "-6", support: "no" },
-          { name: "ios", range: "7-", support: "yes", note: "Ligatures are enabled by default.", default: true, locked: true },
+          { name: "ios", range: "7-", support: "yes", note: "Kerning is enabled by default.", default: true, locked: true },
           { name: "opera", range: "-12.16", support: "no" },
           { name: "opera", range: "15-", support: "yes", default: false },
           { name: "android", range: "-", support: "no" }
