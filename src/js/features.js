@@ -11,7 +11,8 @@ define([
     'data/hyphenate-limit-last',
     'data/hyphenate-limit-lines',
     'data/hyphenate-limit-zone',
-    'data/hyphens'
+    'data/hyphens',
+    'data/font-loading-api',
   ], function (
     Version,
     browsers,
@@ -25,8 +26,9 @@ define([
     hyphenateLimitLast,
     hyphenateLimitLines,
     hyphenateLimitZone,
-    hyphens) {
-  function parseRange (str, browserVersions) {
+    hyphens,
+    fontLoadingApi) {
+  function parseRange (str, browserVersions, currentIndex) {
     var tmp = str.split('-'),
         start = -1,
         end = -1;
@@ -53,7 +55,7 @@ define([
     if (start === -1 || end === -1) {
       throw new Error('Bad browser support range: "' + str + '".');
     } else {
-      return browserVersions.slice(start, end + 1);
+      return browserVersions.slice(start, Math.min(currentIndex, end) + 1);
     }
   }
 
@@ -89,7 +91,7 @@ define([
             tmp[id] = [];
           }
 
-          browser.range = parseRange(browser.range, browsers[id].versions);
+          browser.range = parseRange(browser.range, browsers[id].versions, browsers[id].currentIndex);
 
           tmp[id].push(browser);
         } else {
@@ -173,6 +175,7 @@ define([
     init(hyphenateLimitChars),
     init(hyphenateLimitLines),
     init(hyphenateLimitZone),
-    init(hyphens)
+    init(hyphens),
+    init(fontLoadingApi)
   ];
 });
