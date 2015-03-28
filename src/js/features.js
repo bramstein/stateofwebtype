@@ -93,7 +93,9 @@ define([
 
           browser.range = parseRange(browser.range, browsers[id].versions, browsers[id].currentIndex);
 
-          tmp[id].push(browser);
+          if (browser.range.size()) {
+            tmp[id].push(browser);
+          }
         } else {
           console.error('Feature "' + feature.name + '" uses an unknown browser: "' + id + '".');
         }
