@@ -15,6 +15,7 @@ define([
     'data/hyphenate-limit-zone',
     'data/hyphens',
     'data/font-loading-api',
+    'data/color-fonts'
   ], function (
     Version,
     browsers,
@@ -31,7 +32,8 @@ define([
     hyphenateLimitLines,
     hyphenateLimitZone,
     hyphens,
-    fontLoadingApi) {
+    fontLoadingApi,
+    colorFonts) {
   function parseRange (str, browserVersions, currentIndex) {
     var tmp = str.split('-'),
         start = -1,
@@ -184,6 +186,7 @@ define([
     init(hyphenateLimitLines),
     init(hyphenateLimitZone),
     init(hyphens),
-    init(fontLoadingApi)
+    init(fontLoadingApi),
+    init(colorFonts)
   ];
 });
