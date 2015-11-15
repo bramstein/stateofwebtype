@@ -6,6 +6,7 @@ define(function () {
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },
+      { name: "edge", range: "-", support: "yes" },
 
       // This needs further testing. The property is supported from at least Chrome 14,
       // but at which version was it introduced? It also seems to have disappeared in

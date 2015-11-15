@@ -6,6 +6,7 @@ define(function () {
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },
+      { name: "edge", range: "-", support: "yes" },
       { name: "chrome", range: "-32", support: "no", note: "Applying OpenType features stops web fonts from working." },
       { name: "chrome", range: "33-", support: "yes", note: "Chrome does not enable any of the required default OpenType features." },
       { name: "firefox", range: "3.6", support: "no" },
@@ -29,6 +30,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33", support: "partial", note: "Chrome 33 does not apply ligatures if they contain a space. This bug was fixed in Chrome 34.", default: false },
           { name: "chrome", range: "34-", support: "yes", default: false },
@@ -52,6 +54,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -72,6 +75,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -89,6 +93,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -107,6 +112,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -127,6 +133,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -145,6 +152,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -162,6 +170,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -179,6 +188,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -196,6 +206,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -213,6 +224,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -231,6 +243,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -249,6 +262,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -267,6 +281,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -285,6 +300,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -302,6 +318,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -320,6 +337,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -338,6 +356,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -355,6 +374,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -372,6 +392,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -389,6 +410,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -407,6 +429,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -425,6 +448,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-33", support: "no" },
           { name: "chrome", range: "34-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -442,6 +466,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-33", support: "no" },
           { name: "chrome", range: "34-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -459,6 +484,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -478,6 +504,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -495,6 +522,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -512,6 +540,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -529,6 +558,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -546,6 +576,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -564,6 +595,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-36", support: "no" },
           { name: "chrome", range: "37-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -581,6 +613,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -598,6 +631,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -616,6 +650,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -633,6 +668,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -652,6 +688,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -672,6 +709,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },
@@ -690,6 +728,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-9", support: "no" },
           { name: "ie", range: "10-", support: "yes", default: false },
+          { name: "edge", range: "-", support: "yes", default: false },
           { name: "chrome", range: "-32", support: "no" },
           { name: "chrome", range: "33-", support: "yes", default: false },
           { name: "firefox", range: "3.6", support: "no" },

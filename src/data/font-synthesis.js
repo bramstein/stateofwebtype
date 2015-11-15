@@ -6,6 +6,7 @@ define(function () {
     keywords: ["font", "font-synthesis", "synthesis"],
     browsers: [
       { name: "ie",      range: "-",  support: "no" },
+      { name: "edge",    range: "-",  support: "no" },
       { name: "chrome",  range: "-",  support: "no" },
       { name: "firefox", range: "-33", support: "no" },
       { name: "firefox", range: "34-",  support: "yes" },

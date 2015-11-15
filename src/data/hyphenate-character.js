@@ -6,6 +6,7 @@ define(function () {
     keywords: ["hyphenate", "hyphens", "hyphenation", "hyphen", "character"],
     browsers: [
       { name: "ie",      range: "-",   support: "no" },
+      { name: "edge",    range: "-",   support: "no" },
       { name: "chrome",  range: "-",   support: "yes" },
       { name: "firefox", range: "-",   support: "no" },
       { name: "safari",  range: "-",   support: "yes" },

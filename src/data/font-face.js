@@ -6,6 +6,7 @@ define(function () {
     keywords: ['@font-face', 'fontface', 'font face', 'font', 'webfont'],
     browsers: [
       { name: "ie", range: "-", support: "yes", note: "Internet Explorer 6, 7, and 8 only support the Embedded OpenType (EOT) format. Internet Explorer 9 and above supports multiple formats." },
+      { name: "edge", range: "-", support: "yes" },
       { name: "chrome", range: "-", support: "yes" },
       { name: "firefox", range: "-", support: "yes" },
       { name: "safari", range: "-", support: "yes" },
@@ -21,6 +22,7 @@ define(function () {
         keywords: ['font-family', 'family', 'font', 'typeface'],
         browsers: [
           { name: "ie", range: "-", support: "yes", note: "Internet Explorer limits the length of a font-family to 32 characters." },
+          { name: "edge", range: "-", support: "yes" },
           { name: "chrome", range: "-", support: "yes" },
           { name: "firefox", range: "-", support: "yes" },
           { name: "safari", range: "-", support: "yes" },
@@ -37,6 +39,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "6-8", support: "partial", note: "Internet Explorer 6 to 8 only support a single url, and always download fonts immediately (instead of checking to see if they are used." },
           { name: "ie", range: "9-", support: "yes" },
+          { name: "edge", range: "-", support: "yes" },
           { name: "chrome", range: "-", support: "yes" },
           { name: "firefox", range: "-", support: "yes" },
           { name: "safari", range: "-", support: "yes" },
@@ -53,6 +56,7 @@ define(function () {
             browsers: [
               { name: "ie", range: "-8", support: "no", note: "Internet Explorer 6 to 8 only support Embedded OpenType (EOT)." },
               { name: "ie", range: "9-", support: "yes" },
+              { name: "edge", range: "-", support: "yes" },
               { name: "chrome", range: "4", support: "no" },
               { name: "chrome", range: "5-", support: "yes" },
               { name: "firefox", range: "-", support: "yes" },
@@ -73,6 +77,7 @@ define(function () {
             keywords: ['woff', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-", support: "no" },
+              { name: "edge", range: "-", support: "no" },
               { name: "chrome", range: "-35", support: "no" },
               { name: "chrome", range: "36-", support: "yes" },
               { name: "firefox", range: "-38", support: "no" },
@@ -91,6 +96,7 @@ define(function () {
             keywords: ['eot', 'format', 'web font format', 'font format', 'embedded opentype'],
             browsers: [
               { name: "ie", range: "-", support: "yes", note: "The EOT format only supports embedding TrueType fonts in Internet Explorer 8 and below." },
+              { name: "edge", range: "-", support: "no" },
               { name: "chrome", range: "-", support: "no" },
               { name: "firefox", range: "-", support: "no" },
               { name: "safari", range: "-", support: "no" },
@@ -107,6 +113,7 @@ define(function () {
             browsers: [
               { name: "ie", range: "-8", support: "no" },
               { name: "ie", range: "9-", support: "yes", note: "The fonts need their installable bit set for fonts to load." },
+              { name: "edge", range: "-", support: "yes" },
               { name: "chrome", range: "-", support: "yes" },
               { name: "firefox", range: "-", support: "yes" },
               { name: "safari", range: "-", support: "yes" },
@@ -123,6 +130,7 @@ define(function () {
             keywords: ['svg', 'vector', 'scalable', 'graphics', 'format', 'web font format', 'font format'],
             browsers: [
               { name: "ie", range: "-", support: "no" },
+              { name: "edge", range: "-", support: "no" },
               { name: "firefox", range: "-", support: "no" },
               { name: "chrome", range: "-37", support: "yes" },
               { name: "chrome", range: "38-", support: "partial", note: "Starting from Chrome 38 SVG fonts are disabled on all platforms except Windows XP and Windows Vista. On these platforms SVG fonts still work but are deprecated." },
@@ -142,6 +150,7 @@ define(function () {
         keywords: ['font-weight', 'bold', 'weight'],
         browsers: [
           { name: "ie", range: "-", support: "yes" },
+          { name: "edge", range: "-", support: "yes" },
           { name: "chrome", range: "-", support: "yes" },
           { name: "firefox", range: "-", support: "yes" },
           { name: "safari", range: "-", support: "yes" },
@@ -173,6 +182,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-8", support: "no" },
           { name: "ie", range: "9-", support: "yes" },
+          { name: "edge", range: "-", support: "yes" },
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-8", support: "yes", note: "Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms." },
           { name: "firefox", range: "8-", support: "yes" },
@@ -189,6 +199,7 @@ define(function () {
         keywords: ['font-variant', 'variant', 'small-caps'],
         browsers: [
           { name: "ie", range: "-", support: "no" },
+          { name: "edge", range: "-", support: "no" },
           { name: "chrome", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
           { name: "firefox", range: "-", support: "no" },
           { name: "safari", range: "-", support: "no", note: "Web fonts fail to render if font-variant is used within @font-face." },
@@ -204,6 +215,7 @@ define(function () {
         keywords: ['font-feature-settings', 'feature-settings', 'feature', 'features', 'ligatures', 'small-caps', 'opentype'],
         browsers: [
           { name: "ie", range: "-", support: "no" },
+          { name: "edge", range: "-", support: "no" },
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-19", support: "no" },
           { name: "firefox", range: "20-", support: "yes" },
@@ -221,6 +233,7 @@ define(function () {
         browsers: [
           { name: "ie", range: "-8", support: "no" },
           { name: "ie", range: "9-", support: "partial", note: "Internet Explorer only supports the range syntax with an uppercase U (e.g. U+65, U+66). Support for lowercase ranges (e.g. u+65, u+66) was added to the CSS specification after Internet Explorer shipped, so you should always use ranges with an uppercase U for maximum compatibility." },
+          { name: "edge", range: "-", support: "partial" },
           { name: "chrome", range: "-35", support: "partial" },
           { name: "chrome", range: "36-", support: "yes" },
           { name: "firefox", range: "-35", support: "no" },

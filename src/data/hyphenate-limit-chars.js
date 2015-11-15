@@ -6,6 +6,7 @@ define(function () {
     browsers: [
       { name: "ie", range: "-9", support: "no" },
       { name: "ie", range: "10-", support: "yes" },
+      { name: "edge", range: "-", support: "yes" },
       { name: "chrome", range: "-", support: "no" },
       { name: "firefox", range: "-", support: "no" },
       { name: "safari", range: "-", support: "no" },
