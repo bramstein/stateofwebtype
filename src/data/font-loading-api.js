@@ -6,9 +6,11 @@ define([], function () {
     keywords: ['font events', 'font loading', 'font', 'loading', 'event'],
     browsers: [
       { name: "ie",      range: "-",   support: "no" },
+      { name: "edge",    range: "-",   support: "no" },
       { name: "chrome",  range: "-34", support: "no" },
       { name: "chrome",  range: "35-", support: "yes" },
-      { name: "firefox", range: "-",   support: "no", note: "Support for the CSS Font Loading API should be available in Firefox 35 ([source](https://bugzilla.mozilla.org/show_bug.cgi?id=1028497))." },
+      { name: "firefox", range: "-40", support: "no" },
+      { name: "firefox", range: "41-", support: "yes" },
       { name: "opera",   range: "-21", support: "no" },
       { name: "opera",   range: "22-", support: "yes" },
       { name: "safari",  range: "-",   support: "no" },
