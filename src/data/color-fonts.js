@@ -1,8 +1,8 @@
 define(function () {
   return {
     name: "Color fonts",
-    description: "Four color font formats are currently in existence: three OpenType proposals, one proprietary. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font.",
-    specification: "http://pixelambacht.nl/2014/multicolor-fonts/",
+    description: "Four color font formats are currently in existence: three OpenType proposals, one proprietary. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font. Read about [the differences of the formats](http://pixelambacht.nl/2014/multicolor-fonts/).",
+    specification: "",
     keywords: ["color", "multicolor"],
     browsers: [
       { name: "ie",      range: "11-",  support: "yes", note: "Only COLR/CPAL on Windows 8.1+." },
@@ -23,8 +23,10 @@ define(function () {
           { name: "ie", range: "-", support: "no" },
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-", support: "no" },
-          { name: "safari", range: "9-", support: "no" },
-          { name: "ios", range: "9-", support: "no" },
+          { name: "safari", range: "-8", support: "no" },
+          { name: "safari", range: "9", support: "yes" },
+          { name: "ios", range: "-8", support: "no" },
+          { name: "ios", range: "9", support: "yes" },
           { name: "opera", range: "-", support: "no" },
           { name: "android", range: "-", support: "no" }
         ]
@@ -37,7 +39,8 @@ define(function () {
         browsers: [
           { name: "ie", range: "11-", support: "yes", note: "Only on Windows 8.1+" },
           { name: "chrome", range: "-", support: "no" },
-          { name: "firefox", range: "36-", support: "yes" },
+          { name: "firefox", range: "-31", support: "no" },
+          { name: "firefox", range: "32-", support: "yes" },
           { name: "safari", range: "-", support: "no" },
           { name: "ios", range: "-", support: "no" },
           { name: "opera", range: "-", support: "no" },
@@ -52,7 +55,8 @@ define(function () {
         browsers: [
           { name: "ie", range: "-", support: "no" },
           { name: "chrome", range: "-", support: "no" },
-          { name: "firefox", range: "36-", support: "yes" },
+          { name: "firefox", range: "-25", support: "no" },
+          { name: "firefox", range: "26-", support: "yes" },
           { name: "safari", range: "-", support: "no" },
           { name: "ios", range: "-", support: "no" },
           { name: "opera", range: "-", support: "no" },
@@ -60,7 +64,7 @@ define(function () {
         ]
       },
       {
-        name: "font-family",
+        name: "CBDT/CBLC",
         description: "Google's CBDT/CBLC. Currently only supported on Android when installed as a system font; not available through @font-face. Uses embedded PNG images to represent the color glyphs.",
         specification: "hhttps://www.microsoft.com/typography/otspec/cbdt.htm",
         keywords: ['color', 'multicolor', 'google', 'cbdt', 'cblc'],
