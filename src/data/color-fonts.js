@@ -4,12 +4,16 @@ define(function () {
     description: "Four color font formats are currently in existence: three OpenType proposals, one proprietary. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font. Read about [the differences of the formats](http://pixelambacht.nl/2014/multicolor-fonts/).",
     keywords: ["color", "multicolor"],
     browsers: [
+      { name: "ie",      range: "-10", support: "no" },
       { name: "ie",      range: "11-",  support: "yes", note: "Only COLR/CPAL on Windows 8.1+." },
       { name: "chrome",  range: "-",  support: "no" },
+      { name: "firefox", range: "-35", support: "no" },
       { name: "firefox", range: "36-",  support: "yes", note: "Only COLR/CPAL and SVG-in-OpenType." },
       { name: "opera",   range: "-",  support: "no" },
+      { name: "safari",  range: "-8", support: "no" },
       { name: "safari",  range: "9-", support: "yes", note: "Only Apple's proprietary SBIX." },
-      { name: "ios",     range: "9-", support: "yes", note: "Only Apple's proprietary SBIX." },
+      { name: "ios",     range: "-8.1", support: "no" },
+      { name: "ios",     range: "9.1-", support: "yes", note: "Only Apple's proprietary SBIX." },
       { name: "android", range: "-",  support: "no" }
     ],
     features: [
@@ -23,9 +27,9 @@ define(function () {
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-", support: "no" },
           { name: "safari", range: "-8", support: "no" },
-          { name: "safari", range: "9", support: "yes" },
-          { name: "ios", range: "-8", support: "no" },
-          { name: "ios", range: "9", support: "yes" },
+          { name: "safari", range: "9-", support: "yes" },
+          { name: "ios", range: "-8.1", support: "no" },
+          { name: "ios", range: "9.1-", support: "yes" },
           { name: "opera", range: "-", support: "no" },
           { name: "android", range: "-", support: "no" }
         ]
@@ -36,7 +40,8 @@ define(function () {
         specification: "https://www.microsoft.com/typography/otspec/colr.htm",
         keywords: ['color', 'multicolor', 'colr', 'cpal', 'mircosoft'],
         browsers: [
-          { name: "ie", range: "11-", support: "yes", note: "Only on Windows 8.1+" },
+          { name: "ie", range: "-10", support: "no" },
+          { name: "ie", range: "11-", support: "yes", note: "Only on Windows 8.1 and above." },
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-31", support: "no" },
           { name: "firefox", range: "32-", support: "yes" },
