@@ -2,7 +2,6 @@ define(function () {
   return {
     name: "Color fonts",
     description: "Four color font formats are currently in existence: three OpenType proposals, one proprietary. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font. Read about [the differences of the formats](http://pixelambacht.nl/2014/multicolor-fonts/).",
-    specification: "",
     keywords: ["color", "multicolor"],
     browsers: [
       { name: "ie",      range: "11-",  support: "yes", note: "Only COLR/CPAL on Windows 8.1+." },
