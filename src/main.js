@@ -98,7 +98,9 @@ require(['mustache', 'browsers', 'features'], function (Mustache, browsers, feat
     Object.keys(tmp).forEach(function (c) {
       index.push({
         index: c,
-        entries: tmp[c]
+        entries: tmp[c].sort(function (a, b) {
+          return a.localeCompare(b);
+        })
       });
     });
 
