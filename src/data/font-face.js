@@ -15,7 +15,7 @@ define(function () {
     ],
     features: [
       {
-        name: "font-family",
+        name: "font-family (font-face)",
         description: "The `font-family` property (when used inside an @font-face rule) gives a web font a name by which it can be referenced in a CSS font stack.",
         specification: "http://www.w3.org/TR/css3-fonts/#font-family-desc",
         keywords: ['font-family', 'family', 'font', 'typeface'],
@@ -136,7 +136,7 @@ define(function () {
         ]
       },
       {
-        name: "font-weight",
+        name: "font-weight (font-face)",
         description: "When used inside a `@font-face` rule the `font-weight` property is used to classify a web font as having a certain weight. This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-weight",
         keywords: ['font-weight', 'bold', 'weight'],
@@ -151,7 +151,7 @@ define(function () {
         ]
       },
       {
-        name: "font-style",
+        name: "font-style (font-face)",
         description: "When used inside a `@font-face` rule the `font-style` property is used to classify a web font as having a certain style (e.g. `italic`, `oblique`). This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-style",
         keywords: ['font-style', 'style', 'italic', 'oblique'],
@@ -166,7 +166,7 @@ define(function () {
         ]
       },
       {
-        name: "font-stretch",
+        name: "font-stretch (font-face)",
         description: "When used inside a `@font-face` rule the `font-stretch` property is used to classify a web font as having a certain style (e.g. condensed, expanded). This property does not affect rendering and is only used for font matching (though it may affect fallback fonts and faux styles).",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-stretch",
         keywords: ['font-stretch', 'stretch', 'condensed', 'expanded'],
@@ -183,7 +183,7 @@ define(function () {
         ]
       },
       {
-        name: "font-variant",
+        name: "font-variant (font-face)",
         description: "When used inside a `@font-face` rule the `font-variant` property is used to specify a default font variation for the web font.",
         specification: "http://www.w3.org/TR/css3-fonts/#descdef-font-variant",
         keywords: ['font-variant', 'variant', 'small-caps'],
