@@ -5,6 +5,7 @@ define([
     'data/values',
     'data/font-face',
     'data/font-feature-settings',
+    'data/font-variant',
     'data/font-kerning',
     'data/font-size-adjust',
     'data/font-synthesis',
@@ -23,6 +24,7 @@ define([
     values,
     fontface,
     fontFeatureSettings,
+    fontVariant,
     fontKerning,
     fontSizeAdjust,
     fontSynthesis,
@@ -178,6 +180,7 @@ define([
   return [
     init(fontface),
     init(fontFeatureSettings),
+    init(fontVariant),
     init(fontKerning),
     init(fontSizeAdjust),
     init(fontSynthesis),
