@@ -1,7 +1,7 @@
 define(function () {
   return {
     name: "Color fonts",
-    description: "Four color font formats are currently in existence: COLR/CPAL, SBIX, SVG-OpenType, and CBDT/CBLC. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font. Read about [the differences of the formats](http://pixelambacht.nl/2014/multicolor-fonts/).",
+    description: "Four color font formats are currently in existence: COLR/CPAL, SBIX, OpenType-SVG, and CBDT/CBLC. Support is fragmented. When unsupported, the browser will fall back to regular glyphs in the font. Read about [the differences of the formats](http://pixelambacht.nl/2014/multicolor-fonts/).",
     keywords: ["color", "multicolor"],
     browsers: [
       { name: "ie",      range: "-10", support: "no" },
