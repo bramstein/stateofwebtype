@@ -6,6 +6,7 @@ define(function () {
     keywords: ["kern", "kerning"],
     browsers: [
       { name: "ie",      range: "-",  support: "no" },
+      { name: "edge",    range: "-",  support: "no" },
       { name: "chrome",  range: "-",  support: "no" },
       { name: "firefox", range: "-",  support: "no" },
       { name: "opera",   range: "-",  support: "no" },

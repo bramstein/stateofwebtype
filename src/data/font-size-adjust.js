@@ -6,6 +6,7 @@ define(function () {
     keywords: ["font", "font-size", "font-size-adjust", "adjust"],
     browsers: [
       { name: "ie",      range: "-",  support: "no" },
+      { name: "edge",    range: "-",  support: "no" },
       { name: "chrome",  range: "-",  support: "no" },
       { name: "firefox", range: "-", support: "yes" },
       { name: "opera",   range: "-",  support: "no" },
