@@ -185,12 +185,14 @@ define(function () {
           { name: "ie", range: "-8", support: "no" },
           { name: "ie", range: "9-", support: "yes" },
           { name: "edge", range: "-", support: "yes" },
-          { name: "chrome", range: "-", support: "no" },
+          { name: "chrome", range: "-47", support: "no" },
+          { name: "chrome", range: "48-", support: "yes" },
           { name: "firefox", range: "-8", support: "yes", note: "Firefox 3.6 to 8 on Windows do not support font-stretch. The font-stretch property is supported from version 3.6 on all other platforms." },
           { name: "firefox", range: "8-", support: "yes" },
           { name: "safari", range: "-", support: "no" },
           { name: "ios", range: "-", support: "no" },
-          { name: "opera", range: "-", support: "no" },
+          { name: "opera", range: "-34", support: "no" },
+          { name: "opera", range: "35-", support: "yes" },
           { name: "android", range: "-", support: "no" }
         ]
       },
