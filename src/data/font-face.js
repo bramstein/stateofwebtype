@@ -82,8 +82,10 @@ define(function () {
               { name: "chrome", range: "36-", support: "yes" },
               { name: "firefox", range: "-38", support: "no" },
               { name: "firefox", range: "39-", support: "yes" },
-              { name: "safari", range: "-", support: "no" },
-              { name: "ios", range: "-", support: "no" },
+              { name: "safari", range: "-9", support: "no" },
+              { name: "safari", range: "10-", support: "yes", note: "WOFF2 is only supported on Safari 10 on OS X Sierra, and not on earlier OS X versions." },
+              { name: "ios", range: "-9.1", support: "no" },
+              { name: "ios", range: "10-", support: "yes" },
               { name: "opera", range: "-22", support: "no" },
               { name: "opera", range: "23-", support: "yes" },
               { name: "android", range: "-", support: "no" }
