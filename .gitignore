@@ -2,3 +2,4 @@ node_modules
 dist
 tmp
 mixture.json
+.DS_Store
