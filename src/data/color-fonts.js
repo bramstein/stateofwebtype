@@ -8,7 +8,8 @@ define(function () {
       { name: "ie",      range: "11-",  support: "partial", note: "Only COLR/CPAL on Windows 8.1+." },
       { name: "edge",    range: "-37", support: "partial", note: "Only COLR/CPAL." },
       { name: "edge",    range: "38-", support: "yes" },
-      { name: "chrome",  range: "-",  support: "no" },
+      { name: "chrome",  range: "-52",  support: "no" },
+      { name: "chrome",  range: "53-",  support: "partial", note: "Only COLR/CPAL on Windows 8.1+ and OpenType-SVG on Windows 10+."},
       { name: "firefox", range: "-35", support: "no" },
       { name: "firefox", range: "36-",  support: "partial", note: "Only COLR/CPAL and OpenType-SVG." },
       { name: "opera",   range: "-",  support: "no" },
@@ -16,7 +17,8 @@ define(function () {
       { name: "safari",  range: "9-", support: "partial", note: "Only sbix." },
       { name: "ios",     range: "-8.1", support: "no" },
       { name: "ios",     range: "9.1-", support: "partial", note: "Only sbix." },
-      { name: "android", range: "-",  support: "no" }
+      { name: "android", range: "-4.3",  support: "no" },
+      { name: "android", range: "4.4-",  support: "partial", note: "Only CBDT/CBLC." }
     ],
     features: [
       {
@@ -28,10 +30,11 @@ define(function () {
           { name: "ie", range: "-", support: "no" },
           { name: "edge", range: "-37", support: "no" },
           { name: "edge", range: "38-", support: "yes" },
-          { name: "chrome", range: "-", support: "no" },
+          { name: "chrome", range: "-40", support: "no" },
+          { name: "chrome", range: "41-", support: "yes", note: "Only on OS X 10.10 or macOS 10.12 and above." },
           { name: "firefox", range: "-", support: "no" },
           { name: "safari", range: "-8", support: "no" },
-          { name: "safari", range: "9-", support: "yes" },
+          { name: "safari", range: "9-", support: "yes", note: "Only on OS X 10.7 and above." },
           { name: "ios", range: "-8.1", support: "no" },
           { name: "ios", range: "9.1-", support: "yes" },
           { name: "opera", range: "-", support: "no" },
@@ -47,7 +50,8 @@ define(function () {
           { name: "ie", range: "-10", support: "no" },
           { name: "ie", range: "11-", support: "yes", note: "Only on Windows 8.1 and above." },
           { name: "edge", range: "-", support: "yes" },
-          { name: "chrome", range: "-", support: "no" },
+          { name: "chrome", range: "-52", support: "no" },
+          { name: "chrome", range: "53-", support: "yes", note: "Only on Windows 8.1 and above." },
           { name: "firefox", range: "-31", support: "no" },
           { name: "firefox", range: "32-", support: "yes" },
           { name: "safari", range: "-", support: "no" },
@@ -65,7 +69,8 @@ define(function () {
           { name: "ie", range: "-", support: "no" },
           { name: "edge", range: "-37", support: "no" },
           { name: "edge", range: "38-", support: "yes" },
-          { name: "chrome", range: "-", support: "no" },
+          { name: "chrome", range: "-52", support: "no" },
+          { name: "chrome", range: "53-", support: "yes", note: "Only on Windows 10 and above." },
           { name: "firefox", range: "-25", support: "no" },
           { name: "firefox", range: "26-", support: "yes" },
           { name: "safari", range: "-", support: "no" },
@@ -88,7 +93,8 @@ define(function () {
           { name: "safari", range: "-", support: "no" },
           { name: "ios", range: "-", support: "no" },
           { name: "opera", range: "-", support: "no" },
-          { name: "android", range: "-", support: "no", note: "Only supported on Android when installed as a system font; not available through @font-face." }
+          { name: "android", range: "-4.3", support: "no" },
+          { name: "android", range: "4.4-", support: "yes", note: "Only supported on Android when installed as a system font; not available through @font-face." }
         ]
       }
     ]
