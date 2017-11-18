@@ -54,7 +54,7 @@ define(function () {
           { name: "firefox", range: "32-", support: "yes" },
           { name: "safari", range: "-11", support: "no" },
           { name: "safari", range: "11-", support: "yes" },
-          { name: "ios", range: "-", support: "no" },
+          { name: "ios", range: "-11", support: "no" },
           { name: "ios", range: "11-", support: "yes" },
           { name: "opera", range: "-", support: "no" },
           { name: "android", range: "-", support: "no" }
