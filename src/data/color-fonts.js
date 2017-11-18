@@ -13,9 +13,11 @@ define(function () {
       { name: "firefox", range: "36-",  support: "partial", note: "Only COLR/CPAL and OpenType-SVG." },
       { name: "opera",   range: "-",  support: "no" },
       { name: "safari",  range: "-8", support: "no" },
-      { name: "safari",  range: "9-", support: "partial", note: "Only sbix." },
+      { name: "safari",  range: "9-10", support: "partial", note: "Only sbix." },
+      { name: "safari",  range: "11-", support: "partial", note: "Only COLR/CPAL and sbix." },
       { name: "ios",     range: "-8.1", support: "no" },
-      { name: "ios",     range: "9.1-", support: "partial", note: "Only sbix." },
+      { name: "ios",     range: "9.1-10", support: "partial", note: "Only sbix." },
+      { name: "ios",  range: "11-", support: "partial", note: "Only COLR/CPAL and sbix." },
       { name: "android", range: "-",  support: "no" }
     ],
     features: [
@@ -50,8 +52,10 @@ define(function () {
           { name: "chrome", range: "-", support: "no" },
           { name: "firefox", range: "-31", support: "no" },
           { name: "firefox", range: "32-", support: "yes" },
-          { name: "safari", range: "-", support: "no" },
-          { name: "ios", range: "-", support: "no" },
+          { name: "safari", range: "-11", support: "no" },
+          { name: "safari", range: "11-", support: "yes" },
+          { name: "ios", range: "-11", support: "no" },
+          { name: "ios", range: "11-", support: "yes" },
           { name: "opera", range: "-", support: "no" },
           { name: "android", range: "-", support: "no" }
         ]
